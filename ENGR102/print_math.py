@@ -21,4 +21,4 @@ print("Radon-222 left is", 5*2**(-3/3.8), "g")
 
 #Calculate the pressure of 5 moles of an ideal gas with a volume of 0.25 m^3, and temperature of 
 #415 K using the Ideal Gas Law
-print("Pressure is", ,"kPa")
+print("Pressure is", (415*5*8.314)/(1000*0.25),"kPa")
