@@ -16,7 +16,9 @@ x2 = -5
 y2 = 30
 z2 = 9
 
-time = 30.0
+time = 30
+tstart = 30
+tend = 60
 time1 = 12
 time2 = 85
 
@@ -33,7 +35,7 @@ print("z1 =", z1, "m")
 print("-----------------------")
 
 #loop2
-time = 37.5
+time = tstart + (tend - tstart)/4
 
 x1=x0+(((time-time1)*(x2-x0))/(time2-time1))
 y1=y0+(((time-time1)*(y2-y0))/(time2-time1))
@@ -46,7 +48,7 @@ print("z2 =", z1, "m")
 print("-----------------------")
 
 #loop3
-time = 45.0
+time = tstart + 2*(tend - tstart)/4
 
 x1=x0+(((time-time1)*(x2-x0))/(time2-time1))
 y1=y0+(((time-time1)*(y2-y0))/(time2-time1))
@@ -59,7 +61,7 @@ print("z3 =", z1, "m")
 print("-----------------------")
 
 #loop4
-time = 52.5
+time = tstart + 3*(tend - tstart)/4
 
 x1=x0+(((time-time1)*(x2-x0))/(time2-time1))
 y1=y0+(((time-time1)*(y2-y0))/(time2-time1))
@@ -72,7 +74,7 @@ print("z4 =", z1, "m")
 print("-----------------------")
 
 #loop4
-time = 60.0
+time = tend
 
 x1=x0+(((time-time1)*(x2-x0))/(time2-time1))
 y1=y0+(((time-time1)*(y2-y0))/(time2-time1))

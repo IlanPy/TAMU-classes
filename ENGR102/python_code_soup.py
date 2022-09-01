@@ -1,4 +1,5 @@
 from re import X
+from turtle import xcor
 
 
 # By submitting this assignment, I agree to the following:
@@ -54,3 +55,39 @@ z+=y
 print(z)
 
 #fifth num
+z=0
+y=10
+x=1
+x+=1
+x+=1
+x+=1
+x+=1
+y+=x
+y*=x
+z+=y
+y=10
+x=y
+y*=x
+x=1
+x+=1
+x+=1
+x+=1
+x+=1
+x+=1
+y*=x
+z+=y
+y=10
+x=y
+y*=x
+y*=x
+x=1
+x+=1
+x+=1
+x+=1
+x+=1
+x+=1
+x+=1
+x+=1
+y*=x
+z+=y
+print(z)
