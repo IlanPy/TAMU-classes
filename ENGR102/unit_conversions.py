@@ -23,7 +23,7 @@ kilopascals = value*101.325
 print(f'{value:.2f} atmospheres is equivalent to {kilopascals:.2f} kilopascals')
 btu = value*3.412141633
 print(f'{value:.2f} watts is equivalent to {btu:.2f} BTU per hour')
-gallons = value*15.85
+gallons = value*15.850323074494
 print(f'{value:.2f} liters per second is equivalent to {gallons:.2f} US gallons per minute')
 far = value*1.8+32
 print(f'{value:.2f} degrees Celsius is equivalent to {far:.2f} degrees Fahrenheit')
