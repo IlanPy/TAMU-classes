@@ -15,13 +15,13 @@
 #conversions
 print("Please enter the quantity to be converted: ", end = "")
 value = float(input())
-newtons = value*4.45
+newtons = value*4.4482216
 print(f'{value:.2f} pounds force is equivalent to {newtons:.2f} Newtons')
-feet = value*3.28
+feet = value*3.2808399
 print(f'{value:.2f} meters is equivalent to {feet:.2f} feet')
 kilopascals = value*101.325
 print(f'{value:.2f} atmospheres is equivalent to {kilopascals:.2f} kilopascals')
-btu = value*3.41
+btu = value*3.412141633
 print(f'{value:.2f} watts is equivalent to {btu:.2f} BTU per hour')
 gallons = value*15.85
 print(f'{value:.2f} liters per second is equivalent to {gallons:.2f} US gallons per minute')
