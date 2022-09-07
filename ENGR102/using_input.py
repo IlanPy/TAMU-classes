@@ -9,8 +9,8 @@
 from math import *
 
 #Calculate net force using Newtons Second Law with mass 3 kg and acceleration 5.5 m/s^2.
-print("This program calculates the applies force given mass and acceleration")
-print("Please enter the distance (nm): ", end = "")
+print("This program calculates the applied force given mass and acceleration")
+print("Please enter the mass (kg): ", end = "")
 mass = float(input())
 print("Please enter the acceleration (m/s^2): ", end = "")
 acc = float(input())
@@ -29,3 +29,27 @@ print("Please enter the angle (degrees): ", end = "")
 angle = (float(input())*pi)/180
 wavelength = 2*d*sin(angle)
 print("Wavelength is", wavelength, "nm")
+
+
+#Calculate how much Radon-222 is left after 3 days of radioactive decay given an initial amount 
+#of 5 g and a half-life of 3.8 days using the equation of radioactive decay.
+print("This program calculates how much radon-222 is left given time and initial amount")
+print("Please enter the time (days): ", end = "")
+half_life = float(input())/2
+print("Please enter the initial amount (g): ", end = "")
+mass = float(input())
+radon_222 = mass*2**(-3/half_life)
+print("Radon-222 left is", radon_222, "g")
+
+
+#Calculate the pressure of 5 moles of an ideal gas with a volume of 0.25 m^3, and temperature of 
+#415 K using the Ideal Gas Law
+print("This program calculates the pressure given moles, volume, and temperature")
+print("Please enter the number of moles: ", end="")
+moles = float(input())
+print("Please enter the volume (m^3): ", end ="")
+volume = float(input())
+print("Please enter the temperature: ", end="")
+temp = float(input())
+pressure = (temp*moles*8.314)/(1000*volume)
+print("Pressure is", pressure,"kPa")
