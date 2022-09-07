@@ -19,7 +19,7 @@ newtons = value*4.45
 print(f'{value:.2f} pounds force is equivalent to {newtons:.2f} Newtons')
 feet = value*3.28
 print(f'{value:.2f} meters is equivalent to {feet:.2f} feet')
-kilopascals = value*101.33
+kilopascals = value*101.325
 print(f'{value:.2f} atmospheres is equivalent to {kilopascals:.2f} kilopascals')
 btu = value*3.41
 print(f'{value:.2f} watts is equivalent to {btu:.2f} BTU per hour')
