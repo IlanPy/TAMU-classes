@@ -28,7 +28,7 @@ d = float(input())
 print("Please enter the angle (degrees): ", end = "")
 angle = (float(input())*pi)/180
 wavelength = 2*d*sin(angle)
-print(f'Wavelength is {wavelength:.4} nm')
+print(f'Wavelength is {wavelength:.4f} nm')
 
 
 #Calculate how much Radon-222 is left after 3 days of radioactive decay given an initial amount 
