@@ -28,14 +28,14 @@ d = float(input())
 print("Please enter the angle (degrees): ", end = "")
 angle = (float(input())*pi)/180
 wavelength = 2*d*sin(angle)
-print(f'Wavelength is, {wavelength:.4}, "nm')
+print(f'Wavelength is {wavelength:.3} nm')
 
 
 #Calculate how much Radon-222 is left after 3 days of radioactive decay given an initial amount 
 #of 5 g and a half-life of 3.8 days using the equation of radioactive decay.
 print("\nThis program calculates how much Radon-222 is left given time and initial amount")
 print("Please enter the time (days): ", end = "")
-half_life = float(input())/2
+half_life = float(input())
 print("Please enter the initial amount (g): ", end = "")
 mass = float(input())
 radon_222 = mass*2**(-3/half_life)
