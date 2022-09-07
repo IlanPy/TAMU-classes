@@ -13,4 +13,4 @@ print("Please enter the number of digits of precision for e: ", end="")
 input = int(input())
 
 #output string
-print(f"the value of e to {input} digits is: {e:.{input}f}")
+print(f"The value of e to {input} digits is: {e:.{input}f}")
