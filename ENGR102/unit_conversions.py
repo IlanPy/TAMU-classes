@@ -16,14 +16,14 @@
 print("Please enter the quantity to be converted: ", end = "")
 value = float(input())
 newtons = value*4.45
-print(f'{value:.3} pounds force is equivalent to {newtons:.3} Newtons')
+print(f'{value:.2f} pounds force is equivalent to {newtons:.2f} Newtons')
 feet = value*3.28
-print(f'{value:.3} meters is equivalent to {feet:.3} feet')
+print(f'{value:.2f} meters is equivalent to {feet:.2f} feet')
 kilopascals = value*101.33
-print(f'{value:.3} atmospheres is equivalent to {kilopascals:.3} kilopascals')
+print(f'{value:.2f} atmospheres is equivalent to {kilopascals:.2f} kilopascals')
 btu = value*3.41
-print(f'{value:.3} watts is equivalent to {btu:.3} BTU per hour')
+print(f'{value:.2f} watts is equivalent to {btu:.2f} BTU per hour')
 gallons = value*15.85
-print(f'{value:.3} liters per second is equivalent to {gallons:.3} US gallons per minute')
+print(f'{value:.2f} liters per second is equivalent to {gallons:.2f} US gallons per minute')
 far = value*1.8+32
-print(f'{value:.3} celsius is equivalent to {far:.3} fahrenheit')
+print(f'{value:.2f} degrees Celsius is equivalent to {far:.2f} degrees Fahrenheit')
