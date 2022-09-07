@@ -17,7 +17,7 @@ acc = float(input())
 
 force = mass*acc
 
-print("Force is", force, "N")
+print(f"Force is {force:.1f} N")
 
 
 #Calculate the wavelength of x-rays scattering from a crystal lattice with a distance between 
@@ -28,7 +28,7 @@ d = float(input())
 print("Please enter the angle (degrees): ", end = "")
 angle = (float(input())*pi)/180
 wavelength = 2*d*sin(angle)
-print(f'Wavelength is {wavelength:.3} nm')
+print(f'Wavelength is {wavelength:.4} nm')
 
 
 #Calculate how much Radon-222 is left after 3 days of radioactive decay given an initial amount 
@@ -39,7 +39,7 @@ time = float(input())
 print("Please enter the initial amount (g): ", end = "")
 mass = float(input())
 radon_222 = mass*2**(-time/3.8)
-print("Radon-222 left is", radon_222, "g")
+print(f"Radon-222 left is {radon_222:0.2f} g")
 
 
 #Calculate the pressure of 5 moles of an ideal gas with a volume of 0.25 m^3, and temperature of 
