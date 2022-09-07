@@ -35,10 +35,10 @@ print(f'Wavelength is {wavelength:.3} nm')
 #of 5 g and a half-life of 3.8 days using the equation of radioactive decay.
 print("\nThis program calculates how much Radon-222 is left given time and initial amount")
 print("Please enter the time (days): ", end = "")
-half_life = float(input())
+time = float(input())
 print("Please enter the initial amount (g): ", end = "")
 mass = float(input())
-radon_222 = mass*2**(-3/half_life)
+radon_222 = mass*2**(-time/3.8)
 print("Radon-222 left is", radon_222, "g")
 
 
@@ -52,4 +52,4 @@ volume = float(input())
 print("Please enter the temperature (K): ", end="")
 temp = float(input())
 pressure = (temp*moles*8.314)/(1000*volume)
-print("Pressure is", pressure,"kPa")
+print(f"Pressure is {int(pressure)} kPa")
