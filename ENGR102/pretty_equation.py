@@ -35,4 +35,11 @@ else:
     c = f"+ {c}"
 
 #output
-print(f"The quadratic equation is {a}x^2 {b}x {c} = 0")
+if(a==0):
+    print(f"The quadratic equation is {b}x {c} = 0")
+elif(b==0):
+    print(f"The quadratic equation is {a}x^2 {c} = 0")
+elif(c==0):
+    print(f"The quadratic equation is {a}x^2 {b}x = 0")
+else:
+    print(f"The quadratic equation is {a}x^2 {b}x {c} = 0")
