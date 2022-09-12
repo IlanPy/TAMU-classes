@@ -27,6 +27,8 @@ if(a==0):
         b = "- "
     elif b<0:
         b = f"- {abs(b)}"
+    elif b == 1:
+        b = ""
     if c<0:
         c = f"- {abs(c)}"
     else:
@@ -37,6 +39,8 @@ elif(b==0):
         a = "- "
     elif a<0:
         a = f"- {abs(a)}"
+    elif a == 1:
+        a = f""
     if c<0:
         c = f"- {abs(c)}"
     else:
@@ -45,12 +49,16 @@ elif(b==0):
 elif(c==0):
     if a==-1:
         a = "- "
+    elif a == 1:
+        a = ""
     elif a<0:
         a = f"- {abs(a)}"
     if b==-1:
         b = "- "
     elif b<0:
         b = f"- {abs(b)}"
+    elif b == 1:
+        b = f"+ "
     else:
         b = f"+ {b}"
     print(f"The quadratic equation is {a}x^2 {b}x = 0")
