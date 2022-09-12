@@ -20,6 +20,8 @@ quarter=0
 dime=0
 penny=0
 nickel=0
+
+#counter
 while(z>=100):
     z-=100
     dollar+=1
@@ -35,7 +37,9 @@ while(z>=5):
 while(z>=1):
     z-=1
     penny+=1
-
+if(z<1 and z>0):
+    penny+=1
+#print
 print(f"You received ${x-y:.2f} in change. That is...")
 if(dollar==1):
     print(f"{dollar} dollar")
