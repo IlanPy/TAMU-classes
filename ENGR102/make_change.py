@@ -57,3 +57,4 @@ elif nickels > 0:
 if pennies == 1:
     print(f"{pennies:.0f} penny")
 elif pennies > 0:
+    print(f"{pennies:.0f} pennies")
