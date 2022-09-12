@@ -10,12 +10,15 @@
 # Assignment:   LAB 4: Activity #2
 # Date:         12 September 2022
 
+#input
 print("Please enter the coefficient A:",end=" ")
 a = int(input())
 print("Please enter the coefficient B:",end=" ")
 b = int(input())
 print("Please enter the coefficient C:",end=" ")
 c = int(input())
+
+#exceptions and formatting
 if a==-1:
     a = "- "
 elif a<0:
@@ -30,4 +33,6 @@ if c<0:
     c = f"- {abs(c)}"
 else:
     c = f"+ {c}"
+
+#output
 print(f"The quadratic equation is {a}x^2 {b}x {c} = 0")
