@@ -32,7 +32,7 @@ while(z>=1):
     z-=1
     penny+=1
 
-print(f"you received {x-y} in change. That is...")
+print(f"You received ${x-y:.2f} in change. That is...")
 if(dollar==1):
     print(f"{dollar} dollar")
 elif dollar>1:
