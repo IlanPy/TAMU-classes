@@ -19,27 +19,54 @@ print("Please enter the coefficient C:",end=" ")
 c = int(input())
 
 #exceptions and formatting
-if a==-1:
-    a = "- "
-elif a<0:
-    a = f"- {abs(a)}"
-if b==-1:
-    b = "- "
-elif b<0:
-    b = f"- {abs(b)}"
-else:
-    b = f"+ {b}"
-if c<0:
-    c = f"- {abs(c)}"
-else:
-    c = f"+ {c}"
+
 
 #output
 if(a==0):
+    if b==-1:
+        b = "- "
+    elif b<0:
+        b = f"- {abs(b)}"
+    if c<0:
+        c = f"- {abs(c)}"
+    else:
+        c = f"+ {c}"
     print(f"The quadratic equation is {b}x {c} = 0")
 elif(b==0):
+    if a==-1:
+        a = "- "
+    elif a<0:
+        a = f"- {abs(a)}"
+    if c<0:
+        c = f"- {abs(c)}"
+    else:
+        c = f"+ {c}"
     print(f"The quadratic equation is {a}x^2 {c} = 0")
 elif(c==0):
+    if a==-1:
+        a = "- "
+    elif a<0:
+        a = f"- {abs(a)}"
+    if b==-1:
+        b = "- "
+    elif b<0:
+        b = f"- {abs(b)}"
+    else:
+        b = f"+ {b}"
     print(f"The quadratic equation is {a}x^2 {b}x = 0")
 else:
+    if a==-1:
+        a = "- "
+    elif a<0:
+        a = f"- {abs(a)}"
+    if b==-1:
+        b = "- "
+    elif b<0:
+        b = f"- {abs(b)}"
+    else:
+        b = f"+ {b}"
+    if c<0:
+        c = f"- {abs(c)}"
+    else:
+        c = f"+ {c}"
     print(f"The quadratic equation is {a}x^2 {b}x {c} = 0")
