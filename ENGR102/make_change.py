@@ -19,6 +19,7 @@ dollar=0
 quarter=0
 dime=0
 penny=0
+nickel=0
 while(z>=100):
     z-=100
     dollar+=1
@@ -28,6 +29,9 @@ while(z>=25):
 while(z>=10):
     z-=10
     dime+=1
+while(z>=5):
+    z-=5
+    nickel+=1
 while(z>=1):
     z-=1
     penny+=1
@@ -45,6 +49,10 @@ if(dime==1):
     print(f"{dime} dime")
 elif dime>1:
     print(f"{dime} dimes")
+if(nickel==1):
+    print(f"{nickel} nickel")
+elif nickel>1:
+    print(f"{nickel} nickels")
 if(penny==1):
     print(f"{penny} penny")
 elif penny>1:
