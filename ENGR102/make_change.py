@@ -7,58 +7,53 @@
 #               Robert Stacks
 #               Dave Wright
 # Section:      501
-# Assignment:   LAB 4: Activity #1
+# Assignment:   LAB 4.13: Make change
 # Date:         12 September 2022
 
-print("How much did you pay?", end =' ')
-x = float(input())
-print("How much did it cost?", end =' ')
-y = float(input())
-z=(x-y)*100
-dollar=0
-quarter=0
-dime=0
-penny=0
-nickel=0
+#Ask user for payment and cost
+print("How much did you pay?")
+payment = float(input())
+print("How much did it cost?")
+cost = float(input())
 
-#counter
-while(z>=100):
-    z-=100
-    dollar+=1
-while(z>=25):
-    z-=25
-    quarter+=1
-while(z>=10):
-    z-=10
-    dime+=1
-while(z>=5):
-    z-=5
-    nickel+=1
-while(z>=1):
-    z-=1
-    penny+=1
-if(z<1 and z>0):
-    penny+=1
-#print
-print(f"You received ${x-y:.2f} in change. That is...")
-if(dollar==1):
-    print(f"{dollar} dollar")
-elif dollar>1:
-    print(f"{dollar} dollars")
-if(quarter==1):
-    print(f"{quarter} quarter")
-elif quarter>1:
-    print(f"{quarter} quarters")
-if(dime==1):
-    print(f"{dime} dime")
-elif dime>1:
-    print(f"{dime} dimes")
-if(nickel==1):
-    print(f"{nickel} nickel")
-elif nickel>1:
-    print(f"{nickel} nickels")
-if(penny==1):
-    print(f"{penny} penny")
-elif penny>1:
-    print(f"{penny} pennies")
+#Calculate change and coins to return
+change = payment - cost
+quarters = change*100 // 25
+remainder = change*100 % 25
+dimes = remainder // 10
+remainder = remainder % 10
+nickels = remainder // 5
+remainder = remainder % 5
 
+if remainder < 1 and 1 - remainder <= 0.01:
+    pennies = 1
+elif remainder < 1:
+    pennies = 0
+else:
+    pennies = remainder
+
+#Print results
+print(f"You received ${change:.2f} in change. That is...")
+
+#Print number of quarters
+if quarters == 1:
+    print(f"{quarters:.0f} quarter")
+elif quarters > 0:
+    print(f"{quarters:.0f} quarters")
+
+#Print number of dimes
+if dimes == 1:
+    print(f"{dimes:.0f} dime")
+elif dimes > 0:
+    print(f"{dimes:.0f} dimes")
+
+#Print number of nickels
+if nickels == 1:
+    print(f"{nickels:.0f} nickel")
+elif nickels > 0:
+    print(f"{nickels:.0f} nickels")
+
+#Print number of pennies
+if pennies == 1:
+    print(f"{pennies:.0f} penny")
+elif pennies > 0:
