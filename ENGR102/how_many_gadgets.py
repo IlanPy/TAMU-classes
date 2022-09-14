@@ -31,7 +31,4 @@ else:
         height2 = 50 - (days-60)
         area2 = (base2*height2)*0.5
         gadget = gadget + (area-area2)
-
-        print(area2)
-        print(area+gadget)
     print(f'The total number of gadgets produced on day {days} is {gadget}')
