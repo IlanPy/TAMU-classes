@@ -6,6 +6,7 @@
 # Section:      401
 # Assignment:   Topic 4 Activity #4
 # Date:         14 September 2022
+
 gadget = 0
 print('Please enter a positive value for day: ', end = "")
 days = int(input())
@@ -23,9 +24,15 @@ else:
         gadget = gadget + 50*(days- 10)
     elif(days<102):
         #something is wrong with this!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-        #it is to calculate area of small square and parallelogram
+        #it is to calculate area of small square and trapezoid
         #this should equate to 3730
+
+        #area of small square and trapezoid
         gadget = (5*10) + ((91+60)*50)/2
+        #area of small square + big square + triangle
+        gadget2=5*10 + (50*(60-10)) + (40*49)*0.5
+        #should be the same but is not and both are wrong
+        print(f'{gadget} + {gadget2}')
         '''
         this is another way to solve. dont bother looking
         gadget = 5*10
@@ -42,7 +49,7 @@ else:
         height2 = 49 - (days-61)
         area2 = (base2*height2)*0.5
         print(area2)
-        #parallelogram+smallsquare-triangle
+        #trapezoid+smallsquare-triangle
         gadget = gadget - area2
         print(gadget)
 
