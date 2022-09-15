@@ -15,8 +15,10 @@ if(days<0):
     print(f'You entered an invalid number!')
 else:
     if(days<11):
+        #works
         gadget = 5*days
     elif(days<61):
+        #works
         gadget = 5*10
         gadget = gadget + 50*(days- 10)
     elif(days<102):
