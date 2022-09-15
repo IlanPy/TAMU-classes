@@ -20,21 +20,27 @@ else:
         gadget = 5*10
         gadget = gadget + 50*(days- 10)
     elif(days<102):
-        #gadget = (5*10) + ((91+60)*50)/2
+        #something is wrong with this!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+        #it is to calculate area of small square and parallelogram
+        #this should equate to 3730
+        gadget = (5*10) + ((91+60)*50)/2
+        '''
+        this is another way to solve. dont bother looking
         gadget = 5*10
         gadget += 50*(60-10)
         print(gadget)
         gadget += ((101-61)*49)*0.5
         print(gadget)
-        '''
         base = 101-61
         height = 49
         area = (base*height)*0.5
         '''
+        #caluclate area of small triangle of days not passed
         base2 = 101-days
         height2 = 49 - (days-61)
         area2 = (base2*height2)*0.5
         print(area2)
+        #parallelogram+smallsquare-triangle
         gadget = gadget - area2
         print(gadget)
 
