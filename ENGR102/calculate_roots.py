@@ -23,10 +23,10 @@ if(det<0):
     complexnum = sqrt(abs(det))/2*a
     print(f'The roots are x = {root1} + {complexnum}i and x = {root1} - {complexnum}i')
 elif (a==0):
-    root1 = -c/b
-    if(b==0 and a==0 and c!=0):
+    if((b==0 and a==0 and c!=0) or b==0):
         print(f'You entered an invalid combination of coefficients!')
     else:
+        root1 = -c/b
         print(f'The root is x = {root1}')
 elif (a!=0):
     root1 = ((-b+sqrt(b**2-(4*a*c)))/2*a)
