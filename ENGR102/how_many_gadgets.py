@@ -7,8 +7,6 @@
 # Assignment:   Topic 4 Activity #4
 # Date:         14 September 2022
 gadget = 0
-gadget2=0
-gadget3=0
 print('Please enter a positive value for day: ', end = "")
 days = int(input())
 
@@ -24,11 +22,11 @@ else:
     elif(days<102):
         gadget = 5*10
         gadget = gadget + 50*(60-10)
-        base = 101-60
-        height = 50 
+        base = 101-61
+        height = 49
         area = (base*height)*0.5
         base2 = 101-days
-        height2 = 50 - (days-60)
+        height2 = 49 - (days-61)
         area2 = (base2*height2)*0.5
         gadget = gadget + (area-area2)
     print(f'The total number of gadgets produced on day {days} is {gadget}')
