@@ -20,13 +20,14 @@ else:
         gadget = 5*10
         gadget = gadget + 50*(days- 10)
     elif(days<102):
-        gadget = 5*10
-        gadget = gadget + 50*(60-10)
+        gadget = ((101+60)*50)/2
+        '''
         base = 101-61
         height = 49
         area = (base*height)*0.5
+        '''
         base2 = 101-days
         height2 = 49 - (days-61)
         area2 = (base2*height2)*0.5
-        gadget = gadget + (area-area2)
+        gadget = gadget - area2
     print(f'The total number of gadgets produced on day {days} is {gadget}')
