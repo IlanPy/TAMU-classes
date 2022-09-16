@@ -24,5 +24,7 @@ else:
         gadget = gadget + 50*(days- 10)
     elif(days<102):
         gadget = 10*5 + 50*50 + ((days-60)*50 - ((days-60)*(days-60+1))/2)
+    elif(days>101):
+        gadget = 10*5 + 50*50 + ((101-60)*50 - ((101-60)*(101-60+1))/2)
 
     print(f'The total number of gadgets produced on day {days} is {int(gadget)}')
