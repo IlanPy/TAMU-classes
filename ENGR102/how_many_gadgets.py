@@ -24,33 +24,5 @@ else:
         gadget = gadget + 50*(days- 10)
     elif(days<102):
         gadget = 10*5 + 50*50 + ((days-60)*50 - ((days-60)*(days-60+1))/2)
-        '''
-        #something is wrong with this!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-        #it is to calculate area of small square and trapezoid
-        #this should equate to 3730
 
-        #area of small square and trapezoid
-        gadget = (5*10) + ((91+60)*50)/2
-        #area of small square + big square + triangle
-        gadget2=5*10 + (50*(60-10)) + (40*49)*0.5
-        #should be the same but is not and both are wrong
-        print(f'{gadget} + {gadget2}')
-        this is another way to solve. dont bother looking
-        gadget = 5*10
-        gadget += 50*(60-10)
-        print(gadget)
-        gadget += ((101-61)*49)*0.5
-        print(gadget)
-        base = 101-61
-        height = 49
-        area = (base*height)*0.5
-        #caluclate area of small triangle of days not passed
-        base2 = 101-days
-        height2 = 49 - (days-61)
-        area2 = (base2*height2)*0.5
-        print(area2)
-        #trapezoid+smallsquare-triangle
-        gadget = gadget - area2
-        '''
-
-    print(f'The total number of gadgets produced on day {days} is {gadget}')
+    print(f'The total number of gadgets produced on day {days} is {int(gadget)}')
