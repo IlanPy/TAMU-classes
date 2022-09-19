@@ -1,3 +1,14 @@
+#  By submitting this assignment, I agree to the following:
+#  "Aggies do not lie, cheat, or steal, or tolerate those who do."
+#  "I have not given or received any unauthorized aid on this assignment."
+#
+# Names:        Jordan Rivas
+#               Ilan Sela
+#               Robert Stacks
+#              	Dave Wright
+# Section:      	501
+# Assignment:   	Diabetes Risk Planning
+# Date:         	19 September 2022
 
 from math import *
 
