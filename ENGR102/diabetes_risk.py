@@ -54,10 +54,8 @@ family = 0
 print(f'Do you have a family history of diabetes (Y/N)? ', end = '')
 familyHist = input()
 if(familyHist == 'y' or familyHist == 'Y'):
-    print('Was it a sibling (Y/N)? ', end='')
+    print('Both parent and sibling (Y/N)? ', end='')
     sibling = input()
-    print('Was it a parent (Y/N)? ', end = '')
-    parent = input()
 
 #################### PART B #######################
 
@@ -100,9 +98,9 @@ elif((cigarettes == 'n' or cigarettes == 'N') and (smoke == 'n' or smoke == 'N')
 #assigning value for family history
 if(familyHist == 'n' or familyHist == 'N'):
     family = 0
-elif((sibling == 'y' or sibling == 'Y') or (parent == 'y' or parent == 'Y')):
+elif(sibling == 'n' or sibling == 'N'):
     family = 0.728
-elif((sibling == 'y' or sibling == 'Y') and (parent == 'y' or parent == 'Y')):
+elif(sibling == 'Y' or sibling == 'y'):
     family = 0.753
 
 #################### PART C #######################
