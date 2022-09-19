@@ -40,12 +40,12 @@ steroids = input()
 
 #Question 6
 smoker = 0
+smoke = 0
 print(f'Do you smoke cigarettes (Y/N)? ', end = '')
 cigarettes = input()
-
-#Question 7
-print(f'Did you used to smoke (Y/N)? ', end = '')
-smoke = input()
+if (cigarettes == 'n' or cigarettes == 'N'):
+    print(f'Did you used to smoke (Y/N)? ', end = '')
+    smoke = input()
 
 #Question 8
 sibling = ''
