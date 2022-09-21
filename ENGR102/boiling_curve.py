@@ -35,10 +35,10 @@ elif(x<bx):
 elif(x<cx):
     m=log10(cy/by)/log10(cx/bx)
     y=by*(x/bx)**m
-elif(x<cx):
+elif(x<dx):
     m=log10(dy/cy)/log10(dx/cx)
     y =cy*(x/cx)**m
-elif(x<dx):
+elif(x<ex):
     m=log10(ey/dy)/log10(ex/dx)
     y=dy*(x/dx)**m
 elif(x==ex):
