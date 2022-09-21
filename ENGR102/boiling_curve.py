@@ -8,6 +8,7 @@
 # Date:         	21 September 2022
 from math import *
 
+#variables
 ax = 1.3
 ay = 1000
 bx = 5
@@ -21,11 +22,14 @@ ey = 1.5*(10**6)
 y = 0
 m=0
 
+#input
 print(f'Enter the excess temperature: ', end ='')
-x = int(input())
+x = float(input())
 
-
-if(ax<=x and x<bx):
+#conditionals
+if(x<ax):
+    print('Surface heat flux is not available')
+elif(x<bx):
     m=log10(by/ay)/log10(bx/ax)
     y=ay*(x/ax)**m
 elif(x<bx):
@@ -39,8 +43,9 @@ elif(x<dx):
     y=dy*(x/dx)**m
 elif(x==ex):
     y=1.5*(10**6)
-else:
-    print('surface heat flux is not available')
+elif(ex<x):
+    print('Surface heat flux is not available')
 
+#output
 if(y!=0):
     print(f'The surface heat flux is approximately {int(y)} W/m^2')
