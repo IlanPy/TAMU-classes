@@ -32,7 +32,7 @@ if(x<ax):
 elif(x<bx):
     m=log10(by/ay)/log10(bx/ax)
     y=ay*(x/ax)**m
-elif(x<bx):
+elif(x<cx):
     m=log10(cy/by)/log10(cx/bx)
     y=by*(x/bx)**m
 elif(x<cx):
