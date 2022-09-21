@@ -29,20 +29,26 @@ x = float(input())
 #conditionals
 if(x<ax):
     print('Surface heat flux is not available')
+#Region I
 elif(x<bx):
     m=log10(by/ay)/log10(bx/ax)
     y=ay*(x/ax)**m
+#Region II
 elif(x<cx):
     m=log10(cy/by)/log10(cx/bx)
     y=by*(x/bx)**m
+#Region III
 elif(x<dx):
     m=log10(dy/cy)/log10(dx/cx)
     y =cy*(x/cx)**m
+#Region IIII
 elif(x<ex):
     m=log10(ey/dy)/log10(ex/dx)
     y=dy*(x/dx)**m
+#For x=ex
 elif(x==ex):
     y=1.5*(10**6)
+#out of range
 elif(ex<x):
     print('Surface heat flux is not available')
 
