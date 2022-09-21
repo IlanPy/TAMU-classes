@@ -48,4 +48,4 @@ elif(ex<x):
 
 #output
 if(y!=0):
-    print(f'The surface heat flux is approximately {int(y)} W/m^2')
+    print(f'The surface heat flux is approximately {round(y)} W/m^2')
