@@ -16,7 +16,7 @@ from math import *
 print(f'Enter the side length in meters: ', end = '')
 x = float(input())
 print(f'Enter the number of layers: ', end = '')
-layers = float(input())
+layers = int(input())
 
 #initalize area
 area = 0
@@ -27,7 +27,7 @@ top = (sqrt(3)/4)*(top**2)
 
 #for loop for area of sides
 for i in range(layers):
-    area = area + (i+1)*x*3
+    area = area + (i+1)*(x**2)*3
 
 #calculation and print
 total = top + area
