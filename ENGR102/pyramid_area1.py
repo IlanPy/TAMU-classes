@@ -14,9 +14,9 @@ from math import *
 
 #inputs
 print(f'Enter the side length in meters: ', end = '')
-x = int(input())
+x = float(input())
 print(f'Enter the number of layers: ', end = '')
-layers = int(input())
+layers = float(input())
 
 #initalize area
 area = 0
