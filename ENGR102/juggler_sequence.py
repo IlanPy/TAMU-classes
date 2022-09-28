@@ -7,10 +7,13 @@
 # Assignment:   Lab 6 Individual #2
 # Date:         24 August 2022
 
+#input
 print(f'Enter a positive integer: ', end='')
 num = int(input())
 count = 0
 print(f'The Juggler sequence starting at {num} is:\n{num}', end ='')
+
+#while loop
 while num!=1:
     if num%2!=0:
         num=int(num**(3/2))
@@ -18,7 +21,8 @@ while num!=1:
         num=int(num**(1/2))
     count+=1
 
+    #sequence print statement
     print(f', {num}', end =' ')
     
-
+#final output
 print(f'\nIt took {count} iterations to reach 1')
