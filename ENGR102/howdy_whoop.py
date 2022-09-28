@@ -13,9 +13,11 @@ print(f'Enter another integer: ', end='')
 num2 = int(input())
 
 for i in range(1,101):
-    if(i%num1==0):
+    if(i%num1==0 and i%num2!=0):
         print(f'Howdy')
-    elif(i%num2==0):
+    elif(i%num2==0 and i%num1!=0):
         print(f'Whoop')
+    elif(i%num1==0 and i%num2==0):
+        print(f'Howdy Whoop')
     else:
         print(i)
