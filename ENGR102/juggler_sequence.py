@@ -5,7 +5,7 @@
 # Name:         Ilan Sela
 # Section:      401
 # Assignment:   Lab 6 Individual #2
-# Date:         24 August 2022
+# Date:         28 September 2022
 
 #input
 print(f'Enter a positive integer: ', end='')
