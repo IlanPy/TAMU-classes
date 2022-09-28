@@ -10,7 +10,7 @@
 print(f'Enter a positive integer: ', end='')
 num = int(input())
 count = 0
-print(f'{num}, ', end ='')
+print(f'The Juggler sequence starting at {num} is:\n{num}', end ='')
 while num!=1:
     if num%2!=0:
         num=int(num**(3/2))
@@ -18,10 +18,7 @@ while num!=1:
         num=int(num**(1/2))
     count+=1
 
-    if num == 1:
-        print(f'{num}', end =' ')
-    else:
-        print(f'{num},', end =' ')
+    print(f', {num}', end =' ')
     
 
 print(f'\nIt took {count} iterations to reach 1')
