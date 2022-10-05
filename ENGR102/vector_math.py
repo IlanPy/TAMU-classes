@@ -23,6 +23,7 @@ product = []
 listAdd = []
 listSub = []
 
+#creates a float list and calculates magnitude
 for i in lA:
     listA.append(float(i))
 
@@ -37,18 +38,19 @@ for i in listB:
     magB+=(i**2)
 magB=sqrt(magB)
 
-
+#subtraction and addition
 for i in range(len(listA)):
     listAdd.append(listA[i] + listB[i])
 for i in range(len(listB)):
     listSub.append(listA[i] - listB[i])
 
-
+#dot product
 for i in range(len(listA)):
     product.append(listA[i] * listB[i])
 for i in range(len(product)):
     dotprod+=product[i]
 
+#output
 print(f'The magnitude of vector A is {magA:.5f}')
 print(f'The magnitude of vector B is {magB:.5f}')
 print(f'A + B is {listAdd}')
