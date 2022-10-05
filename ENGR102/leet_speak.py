@@ -10,29 +10,17 @@
 #input
 print("Enter some text: ", end='')
 words = input()
-mylist = words.split()
-s=0
+#mylist = words.split()
+mydict = {'a':'4', 'e':'3','o':'0','s':'5','t':'7'}
+#s=0
 
-#loop words
-for i in mylist:
-    #loop characters in words
-    for k in i:
-        #assignment
-        mystr = "".join(mylist[s])
-        if k=='a':
-            mystr = mystr.replace('a', '4')
-        elif k=='e':
-            mystr = mystr.replace('e', '3')
-        elif k=='o':
-            mystr = mystr.replace('o', '0')
-        elif k=='s':
-            mystr = mystr.replace('s', '5')
-        elif k=='t':
-            mystr = mystr.replace('t', '7')
-        
-        mylist[s] = mystr
-    s+=1
+leetwords = ''
+for i in words:
+    if i in mydict:
+        k = mydict[i]
+        leetwords+=k
+    else:
+        leetwords+=i
+print(f'In leet speak, "{words}" is: \n{leetwords}')
 
-#output
-mystr = " ".join(mylist)
-print(f'In leet speak, "{words}" is: \n{mystr}')
+
