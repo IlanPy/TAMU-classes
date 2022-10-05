@@ -1,5 +1,17 @@
+# By submitting this assignment, I agree to the following:
+#   "Aggies do not lie, cheat, or steal, or tolerate those who do."
+#   "I have not given or received any unauthorized aid on this assignment."
+#
+# Name:         Ilan Sela
+# Section:      401
+# Assignment:   Lab 7a
+# Date:         5 October 2022
+
+#print for input
 print('Enter word(s) to convert to Pig Latin: ', end ='')
 mystr = input()
+
+#variables
 consonants = ['b','c','d','f','g','h','j','k','l','m','n','p','q','r',
             's','t','v','w','x','z']
 vowels = ['a','e','i','o','u','y']
@@ -9,6 +21,7 @@ s=0
 truce = True
 copylist = mylist.copy()
 
+#consonants checking
 for i in mylist:
     truce = True
     for j in i:
@@ -24,6 +37,7 @@ for i in mylist:
         if truce:
             break
 
+#vowel and 'ay' checking
     copystr = "".join(copylist[s])
     mystr = "".join(mylist[s])
     if copystr != mystr:
