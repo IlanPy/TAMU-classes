@@ -4,40 +4,39 @@ consonants = ['b','c','d','f','g','h','j','k','l','m','n','p','q','r',
             's','t','v','w','x','z']
 vowels = ['a','e','i','o','u','y']
 mylist = mystr.split(' ')
-checklist = mylist
+s=0
+
 truce = True
+copylist = mylist.copy()
 
-#for i in range((len(mylist))):
-#    if mylist[i][0] == ('b' or 'B'):
-#        mylist[i] += (mylist[i][0])
-#        mylist[i] += 'ay'
-#        stre = str(mylist[i])
-#        stre = stre[1:]
-#        mylist[i] = stre
-for s in range(len(mylist)):
-    for i in mylist:
-        truce = True
-        for j in i:
-            for k in consonants:
-                if(j == k):
-                    i+=j
-                    i = i[1:]
-                    mylist[s] = i
-                    truce = False
-                    break
-            if truce:
-                if mylist != checklist:
-                    mylist[s] += 'ay'
-                    break
-                else:
-                    break
-            
-                
-                
-    
+for i in mylist:
+    truce = True
+    for j in i:
+        for k in consonants:
+            if(j.lower() == k):
+                i+=j
+                i = i[1:]
+                mylist[s] = i
+                truce = False
+                break
+            else:
+                truce = True
+        if truce:
+            break
 
+    copystr = "".join(copylist[s])
+    mystr = "".join(mylist[s])
+    if copystr != mystr:
+        mylist[s] += 'ay'
+    else:
+        for k in vowels:
+            if(mystr[0] == k):
+                mylist[s] += 'yay'
+    s+=1
 
+newstr = " ".join(mylist)
+inputstr = " ".join(copylist)
 
-print(mylist)
+print(f'In Pig Latin, "{inputstr}" is: {newstr}')
 
 newstr = " ".join(mylist)
