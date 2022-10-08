@@ -24,9 +24,6 @@ for i in digit:
 
 for i in range(8):
     #convert to int list
-    if(len(mylist)<4):
-        mylist.insert(0,0)
-        revlist.insert(0,0)
     s=0
     for i in mylist:
         mylist[s]= int(i)
@@ -56,6 +53,8 @@ for i in range(8):
     digit = revdigit - digit
     #convert int to string
     digit = str(digit)
+    if(len(digit)<4):
+        digit = '0' + digit
     #convert string to list
     s=0
     for i in digit:
