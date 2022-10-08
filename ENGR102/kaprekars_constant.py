@@ -15,11 +15,18 @@ mystr = ''
 revstr = ''
 store = [digit]
 
+while(len(digit)<4):
+    digit = '0' + digit
+
 for i in digit:
     mylist.append(i)
 
 for i in digit:
     revlist.append(i)
+
+#repeated case
+if(mylist[0]==mylist[1]==mylist[2]==mylist[3]):
+    print(f'{digit} > 0\n{digit} reaches 0 via Kaprekar\'s routine in 1 iterations')
 
 
 for i in range(8):
@@ -53,7 +60,9 @@ for i in range(8):
     digit = revdigit - digit
     #convert int to string
     digit = str(digit)
-    if(len(digit)<4):
+    #store a list of digits
+    store.append(digit)
+    while(len(digit)<4):
         digit = '0' + digit
     #convert string to list
     s=0
@@ -64,8 +73,6 @@ for i in range(8):
     for i in digit:
         revlist[s]=i
         s+=1
-    #store a list of digits
-    store.append(digit)
     if(digit == '6174'):
         break
 
