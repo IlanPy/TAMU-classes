@@ -27,7 +27,7 @@ for i in digit:
 #repeated case
 if(mylist[0]==mylist[1]==mylist[2]==mylist[3]):
     print(f'{digit} > 0\n{digit} reaches 0 via Kaprekar\'s routine in 1 iterations')
-
+    exit()
 
 for i in range(8):
     #convert to int list
