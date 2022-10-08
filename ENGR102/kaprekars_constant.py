@@ -69,7 +69,6 @@ for i in range(8):
     store.append(digit)
     if(digit == '6174'):
         break
-    print(store)
 
 #print
 s=1
