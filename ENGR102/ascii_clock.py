@@ -23,13 +23,13 @@ master_list = []
 line1 = ["000"," 1 ","222","333","4 4","555","666","777","888","999","   "]
 master_list.append(line1)
 # (Robert) List line2 containing the second line of the ASCII form for each number/colon; append the list to master_list
-line2 = ["0 0","11 ","  2","  3","4 4","5  ","6  ","  7","8 8","9 9"," : "]
+line2 = ["0 0","11 ","  2","  3","4 4","5  ","6  ","  7","8 8","9 9",":"]
 master_list.append(line2)
 # (Robert) List line3 containing the third line of the ASCII form for each number/colon; append the list to master_list
 line3 = ["0 0"," 1 ","222","333","444","555","666","  7","888","999","   "]
 master_list.append(line3)
 # (Dave) List line4 containing the fourth line of the ASCII form for each number/colon; append the list to master_list
-line4 = ["0 0"," 1 ","2  ","  3","  4","  5","6 6","  7","8 8","  9"," : "]
+line4 = ["0 0"," 1 ","2  ","  3","  4","  5","6 6","  7","8 8","  9",":"]
 master_list.append(line4)
 # (Dave) List line5 containing the fifth line of the ASCII form for each number/colon; append the list to master_list
 line5 = ["000","111","222","333","  4","555","666","  7","888","  9","   "]
