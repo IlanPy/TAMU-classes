@@ -11,7 +11,7 @@
 # Date:         12 October 2022
 
 # (Jordan) Get user input for clock time; store in variable "user_input" 
-print('Enter the time: ', end = '')
+print('Enter the time: ')
 user_input = input()
 # (Jordan) Convert input to list; store in variable "input_as_list"
 input_as_list = list(user_input)
