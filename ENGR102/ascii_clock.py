@@ -49,6 +49,5 @@ for i in range(5):
             access_number = int(access_number)
         # (Ilan) Access master_list at index corresponding to outer loop control variable
         # At list accessed in master_list, access element at access_number and print it followed by space
-        print(f'{master_list[i][access_number]} ', end="")
-    # Print new line
-    print('\n')
+        print(f'{master_list[i][access_number]} ', end = "")
+    print('\n', end ="")
