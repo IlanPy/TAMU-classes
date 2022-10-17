@@ -36,13 +36,13 @@ line5 = ["000","111","222","333","  4","555","666","  7","888","999"," "]
 master_list.append(line5)
 
 
-# For loop that runs 5 times to print out each number/colon
-# (Ilan) Outer loop header
+''' For loop that runs 5 times to print out each number/colon
+ (Ilan) Outer loop header '''
 for i in range(5):
     # (Ilan) Inner loop header - runs for every element in input_as_list
     for access_number in input_as_list:
-        # (Ilan) Access input_as_list at index corresponding to loop control variable and convert that element to int; store in "access_number"
-        # If the accessed element is a colon, assign 10 to variable "access_number"
+        ''' (Ilan) Access input_as_list at index corresponding to loop control variable and convert that element to int; store in "access_number"
+         If the accessed element is a colon, assign 10 to variable "access_number"'''
         if(access_number == ':'):
             access_number = 10
         else:
