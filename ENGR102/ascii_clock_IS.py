@@ -39,9 +39,11 @@ for i in range(5):
         # If the accessed element is a colon, assign 10 to variable "access_number"
         if(access_number == ':'):
             access_number = 10
+        else:
+            access_number = int(access_number)
         # (Ilan) Access master_list at index corresponding to outer loop control variable
         # At list accessed in master_list, access element at access_number and print it followed by space
-        print(f'{master_list[i][access_number]} ')
+        print(f'{master_list[i][access_number]} ', end="")
     # Print new line
     print('\n')
 
