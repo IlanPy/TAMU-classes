@@ -32,7 +32,7 @@ master_list.append(line3)
 line4 = ["0 0"," 1 ","2  ","  3","  4","  5","6 6","  7","8 8","  9",":"]
 master_list.append(line4)
 # (Dave) List line5 containing the fifth line of the ASCII form for each number/colon; append the list to master_list
-line5 = ["000","111","222","333","  4","555","666","  7","888","  9"," "]
+line5 = ["000","111","222","333","  4","555","666","  7","888","999"," "]
 master_list.append(line5)
 
 
