@@ -23,17 +23,21 @@ def parta(radsphere, r):
 #function to see if consecutive odd numbers add
 def partb(n):
     list1=[]
+    sum=0
     for i in range(1,n,2):
         list1.append(i)
-    while sum(list1)!=n:
-        ma = max(list1)
-        i = list1.index(ma)
-        list1.pop(i)
-        if sum(list1)!=n:
-            list1.pop(0)
-        if len(list1) <= 2:
-            return False
-    return list1
+    for i in range(1,n,2):
+        list0 = list1[i:]
+        list2=[]
+        sum=0
+        for j in list0:
+            sum +=j
+            list2.append(j)
+            if sum==n:
+                return list2
+            elif sum>n:
+                break
+    return False
 
 #function to print business card
 def partc(border, name, company, email):
