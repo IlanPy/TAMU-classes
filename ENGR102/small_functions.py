@@ -18,6 +18,7 @@ def parta(radsphere, r):
     h = 2*radsphere - 2*(a/(2*pi*radsphere))
     volume1 = pi*r**2*h
     finalvolume = volume-volume1-2*volcap
+    #return value
     return(finalvolume)
 
 #function to see if consecutive odd numbers add
@@ -26,7 +27,7 @@ def partb(n):
     sum=0
     for i in range(1,n,2):
         list1.append(i)
-    for i in range(1,n,2):
+    for i in range(0,n,2):
         list0 = list1[i:]
         list2=[]
         sum=0
@@ -37,6 +38,7 @@ def partb(n):
                 return list2
             elif sum>n:
                 break
+    #return value
     return False
 
 #function to print business card
@@ -51,6 +53,7 @@ def partc(border, name, company, email):
     string5 = email.center(length)
     string6 = border + '  ' + string5 + '  ' + border
     finalstring = string0 + '\n' + string2 + '\n' + string4 + '\n'+string6 + '\n' + string0
+    #return value
     return finalstring
 
 #function for max, min, median
@@ -58,6 +61,7 @@ def partd(list1):
     minimum = min(list1)
     maximum = max(list1)
     med = median(list1)
+    #return value
     return minimum, med, maximum
 
 #function to calculate velocity
@@ -66,6 +70,7 @@ def parte(t, d):
     for i in range(len(t)-1):
         speed = (d[i+1]-d[i])/(t[i+1]-t[i])
         vel.append(speed)
+    #return value
     return vel
 
 #function to calculate if two numbers add to 2026
@@ -74,6 +79,5 @@ def partf(nums):
         for j in range(len(nums)-1):
             if(nums[i]+nums[j])==2026:
                 return nums[i]*nums[j]
+    #return value
     return False
-
-print(partb(75))
