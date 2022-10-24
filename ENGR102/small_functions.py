@@ -55,19 +55,25 @@ def partd(list0):
             for j in range(n-1-i):
                 if list1[j] > list1[j+1]:
                     list1[j], list1[j+1] = list1[j+1], list1[j]
-        middle = n/2
+        if n%2==0:
+            middle = n/2
+        else:
+            middle = (n+1)/2
         median = list1[middle]
     return minimum, median, maximum
 
 def parte(time, distance):
     vel = []
     for i in range(len(time)):
-        speed = distance/time
+        speed = distance[i]/time[i]
         vel.append(speed)
+    return vel
 
 def partf(nums):
     for i in range(len(nums)):
-        for j in range(len(nums-1)):
+        for j in range(len(nums)-1):
             if(nums[i]+nums[j])==2026:
                 return nums[i]*nums[j]
     return False
+
+partd([1,2,3,4,1])
