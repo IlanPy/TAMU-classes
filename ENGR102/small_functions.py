@@ -75,5 +75,3 @@ def partf(nums):
             if(nums[i]+nums[j])==2026:
                 return nums[i]*nums[j]
     return False
-
-partd([1,2,3,4,1])
