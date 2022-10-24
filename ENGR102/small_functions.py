@@ -28,7 +28,7 @@ def partb(n):
     for i in range(1,n,2):
         list1.append(i)
     for i in range(0,n):
-        if(i%2!=0):
+        if(i%2!=0) or i==0:
             list0 = list1[i:]
             list2=[]
             sum=0
