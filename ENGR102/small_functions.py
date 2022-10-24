@@ -59,13 +59,13 @@ def partd(list0):
             middle = n/2
         else:
             middle = (n+1)/2
-        median = list1[middle]
+        median = list1[int(middle)]
     return minimum, median, maximum
 
 def parte(time, distance):
     vel = []
-    for i in range(len(time)):
-        speed = distance[i]/time[i]
+    for i in range(len(time)-1):
+        speed = distance[i+1]/time[i+1]
         vel.append(speed)
     return vel
 
