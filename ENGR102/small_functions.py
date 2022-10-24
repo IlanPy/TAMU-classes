@@ -8,6 +8,8 @@
 # Date:         24 October 2022
 from math import *
 from statistics import median
+
+#volume of a bead
 def parta(radsphere, r):
     volume = (4/3)*pi*(radsphere**3)
     theta = asin(r/radsphere)
@@ -18,16 +20,22 @@ def parta(radsphere, r):
     finalvolume = volume-volume1-2*volcap
     return(finalvolume)
 
-
+#function to see if consecutive odd numbers add
 def partb(n):
     list1=[]
-    for i in range(1,n):
-        if i%2!=0 and (i+2)+(i)==n:
-            list1.append(i)
-            list1.append(i+2)
-            return list1
-    return False
+    for i in range(1,n,2):
+        list1.append(i)
+    while sum(list1)!=n:
+        ma = max(list1)
+        i = list1.index(ma)
+        list1.pop(i)
+        if sum(list1)!=n:
+            list1.pop(0)
+        if len(list1) <= 2:
+            return False
+    return list1
 
+#function to print business card
 def partc(border, name, company, email):
     list1 = [len(border), len(name), len(company), len(email)]
     length = max(list1)
@@ -41,13 +49,14 @@ def partc(border, name, company, email):
     finalstring = string0 + '\n' + string2 + '\n' + string4 + '\n'+string6 + '\n' + string0
     return finalstring
 
+#function for max, min, median
 def partd(list1):
-    list1=[]
     minimum = min(list1)
     maximum = max(list1)
     med = median(list1)
     return minimum, med, maximum
 
+#function to calculate velocity
 def parte(t, d):
     vel = []
     for i in range(len(t)-1):
@@ -55,9 +64,12 @@ def parte(t, d):
         vel.append(speed)
     return vel
 
+#function to calculate if two numbers add to 2026
 def partf(nums):
     for i in range(len(nums)):
         for j in range(len(nums)-1):
             if(nums[i]+nums[j])==2026:
                 return nums[i]*nums[j]
     return False
+
+print(partb(75))
