@@ -27,17 +27,18 @@ def partb(n):
     sum=0
     for i in range(1,n,2):
         list1.append(i)
-    for i in range(0,n,2):
-        list0 = list1[i:]
-        list2=[]
-        sum=0
-        for j in list0:
-            sum +=j
-            list2.append(j)
-            if sum==n:
-                return list2
-            elif sum>n:
-                break
+    for i in range(0,n):
+        if(i%2!=0):
+            list0 = list1[i:]
+            list2=[]
+            sum=0
+            for j in list0:
+                sum +=j
+                list2.append(j)
+                if sum==n:
+                    return list2
+                elif sum>n:
+                    break
     #return value
     return False
 
