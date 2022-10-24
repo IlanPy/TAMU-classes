@@ -30,13 +30,13 @@ def partb(n):
 def partc(border, name, company, email):
     list1 = [len(border), len(name), len(company), len(email)]
     length = max(list1)
-    string0 = '*'*(length+6)
+    string0 = border*(length+6)
     string1 = name.center(length)
-    string2 = '*  ' + string1 + '  *'
+    string2 = border + '  ' + string1 + '  ' + border
     string3 = company.center(length)
-    string4 = '*  ' + string3 + '  *'
+    string4 = border + '  ' + string3 + '  ' + border
     string5 = email.center(length)
-    string6 = '*  ' + string5 + '  *'
+    string6 = border + '  ' + string5 + '  ' + border
     finalstring = string0 + '\n' + string2 + '\n' + string4 + '\n'+string6 + '\n' + string0
     return finalstring
 
@@ -52,9 +52,9 @@ def partd(list0):
         median = list1[0]
     else:
         for i in range(n-1):
-            for j in range(n-1-i):
+            for j in range(n-1-1):
                 if list1[j] > list1[j+1]:
-                    list1[j], list1[j+1] = list1[j], list1[j+1]
+                    list1[j], list1[j+1] = list1[j+1], list1[j]
         middle = n/2
         median = list1[middle]
     return minimum, median, maximum
@@ -64,7 +64,7 @@ def parte(time, distance):
     for i in len(time):
         speed = distance/time
         vel.append(speed)
-[1,3,4,3,2,5]
+
 def partf(nums):
     for i in len(nums):
         for j in len(nums-1):
