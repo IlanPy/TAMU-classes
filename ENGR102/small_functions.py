@@ -7,6 +7,7 @@
 # Assignment:   Lab 9a
 # Date:         24 October 2022
 from math import *
+from statistics import median
 def parta(radsphere, r):
     volume = (4/3)*pi*(radsphere**3)
     theta = asin(r/radsphere)
@@ -40,32 +41,17 @@ def partc(border, name, company, email):
     finalstring = string0 + '\n' + string2 + '\n' + string4 + '\n'+string6 + '\n' + string0
     return finalstring
 
-def partd(list0):
+def partd(list1):
     list1=[]
-    for i in range(len(list0)):
-        list1.append(list0[i])
     minimum = min(list1)
     maximum = max(list1)
-    median = 0
-    n = len(list1)
-    if n==1:
-        median = list1[0]
-    else:
-        for i in range(n-1):
-            for j in range(n-1-i):
-                if list1[j] > list1[j+1]:
-                    list1[j], list1[j+1] = list1[j+1], list1[j]
-        if n%2==0:
-            middle = n/2
-        else:
-            middle = (n+1)/2
-        median = list1[int(middle)]
-    return minimum, median, maximum
+    med = median(list1)
+    return minimum, med, maximum
 
-def parte(time, distance):
+def parte(t, d):
     vel = []
-    for i in range(len(time)-1):
-        speed = distance[i+1]/time[i+1]
+    for i in range(len(t)-1):
+        speed = (d[i+1]-d[i])/(t[i+1]-t[i])
         vel.append(speed)
     return vel
 
