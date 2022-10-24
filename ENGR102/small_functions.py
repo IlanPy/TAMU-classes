@@ -42,7 +42,7 @@ def partc(border, name, company, email):
 
 def partd(list0):
     list1=[]
-    for i in len(list0):
+    for i in range(len(list0)):
         list1.append(list0[i])
     minimum = min(list1)
     maximum = max(list1)
@@ -52,7 +52,7 @@ def partd(list0):
         median = list1[0]
     else:
         for i in range(n-1):
-            for j in range(n-1-1):
+            for j in range(n-1-i):
                 if list1[j] > list1[j+1]:
                     list1[j], list1[j+1] = list1[j+1], list1[j]
         middle = n/2
@@ -61,13 +61,13 @@ def partd(list0):
 
 def parte(time, distance):
     vel = []
-    for i in len(time):
+    for i in range(len(time)):
         speed = distance/time
         vel.append(speed)
 
 def partf(nums):
-    for i in len(nums):
-        for j in len(nums-1):
+    for i in range(len(nums)):
+        for j in range(len(nums-1)):
             if(nums[i]+nums[j])==2026:
                 return nums[i]*nums[j]
     return False
