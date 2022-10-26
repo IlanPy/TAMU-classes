@@ -14,19 +14,16 @@
 def getpoints(mystring):
     #split into first list
     mylist = mystring.split(' ')
-    s=0
+    
     #split into second list
-    for i in mylist:
-        mylist[s]=mylist[s].split(',')
-        s+=1
-    s=0
+    for i in range(len(mylist)):
+        mylist[i]=mylist[i].split(',')
+
     #convert each value to int
-    for i in mylist:
-        k=0
-        for j in i:
-            mylist[s][k] = int(j)
-            k+=1
-        s+=1
+    for i in range(len(mylist)):
+        for j in range(len(mylist[i])):
+            mylist[i][j] = int(mylist[i][j])
+
     return mylist
 
 #do determinant of each point
