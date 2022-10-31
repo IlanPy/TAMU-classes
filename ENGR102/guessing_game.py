@@ -35,8 +35,10 @@ def range_validate(x, count):
         return 0
 
 #counter and run functions
-count = 1
+count = 0
 value = range_validate(guess_input(), count)
+#resets counter
+count+=1
 #loop until correct guess
 while value != 0:
     value = range_validate(guess_input(), count)
