@@ -7,6 +7,8 @@
 # Assignment:   Topic 3 challenge
 # Date:         7 September 2022
 secretnum = 26
+print('Guess the secret number! Hint: it\'s an integer between 1 and 100...')
+#function to retrieve input
 def guess_input():
     valid = True
     print('What is your guess? ', end='')
@@ -19,7 +21,8 @@ def guess_input():
             print('Bad input! Try again: ', end = '')
     return x
 
-def range_validate(x):
+#function to check if input is guessed
+def range_validate(x, count):
     if x > secretnum:
         print('Too high!')
         return 1
@@ -27,10 +30,14 @@ def range_validate(x):
         print('Too low!')
         return 1
     elif x == secretnum:
-        print('You guessed it! It took you 3 guesses.')
+        count+=1
+        print(f'You guessed it! It took you {count} guesses.')
         return 0
 
-
-value = range_validate(guess_input())
+#counter and run functions
+count = 1
+value = range_validate(guess_input(), count)
+#loop until correct guess
 while value != 0:
-    value = range_validate(guess_input())
+    value = range_validate(guess_input(), count)
+    count+=1
