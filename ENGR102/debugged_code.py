@@ -85,7 +85,7 @@ h = interpolate(5, hl, 10, hh, pres)
 s = interpolate(5, sl, 10, sh, pres)
 
 ##### print results #####
-print('Properties at {pres} deg C and {temp} MPa are:')
+print(f'Properties at {pres} deg C and {temp} MPa are:')
 print(f'Specific volume (m^3/kg): {v:.7f}')
 print(f'Specific internal energy (kJ/kg): {u:.2f}')
 print(f'Specific enthalpy (kJ/kg): {h:.2f}')
