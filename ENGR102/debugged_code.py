@@ -7,7 +7,7 @@
 # Assignment:   THE ASSIGNMENT NUMBER (e.g. Lab 1b-2)
 # Date:         DAY MONTH YEAR
 
-def interpolate(x1, x2, y1, y2, x):
+def interpolate(x1, y1, x2, y2, x):
     '''This function interpolates between two points'''
     slope = (y2 - y1) / (x2 - x1)
     y = slope * (x - x1) + y1
