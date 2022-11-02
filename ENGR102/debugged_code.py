@@ -49,7 +49,7 @@ s10 = [0.0003, 0.2943, 0.5685, 0.826, 1.0691, 1.2996, 1.5191, 1.7293,
 
 ##### do calculations #####
 # get temperature and pressure from user
-temp = int(input("Enter a temperature between 0 and 260 deg C: "))
+temp = float(input("Enter a temperature between 0 and 260 deg C: "))
 pres = float(input("Enter a pressure between 5 and 10 MPa: "))
 
 # loop over temperatures in list to find the two that bound
@@ -85,8 +85,8 @@ h = interpolate(5, hl, 10, hh, pres)
 s = interpolate(5, sl, 10, sh, pres)
 
 ##### print results #####
-print(f'Properties at {pres} deg C and {temp} MPa are:')
+print(f'Properties at {temp} deg C and {pres} MPa are:')
 print(f'Specific volume (m^3/kg): {v:.7f}')
 print(f'Specific internal energy (kJ/kg): {u:.2f}')
 print(f'Specific enthalpy (kJ/kg): {h:.2f}')
-print(f'Specific entropy (kJ/kgK): {s:.3f}')
+print(f'Specific entropy (kJ/kgK): {s:.4f}')
