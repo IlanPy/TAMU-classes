@@ -9,11 +9,11 @@
 
 print('Enter the name of the file: ', end='')
 file_name = input()
-with open(file_name, "r") as infile:
-    file_aslist = list(file_name)
-    valid = 0
-    for i in file_aslist:
+valid = 0
+with open(file_name, "r") as myfile:
+    for i in myfile:
         if('byr' in i and 'iyr' in i and 'eyr' in i and 'hgt' in i and 'ecl' in i and 'pid' in i and 'cid' in i):
             valid +=1
     print(f'There are {valid} valid passports')
+
 
