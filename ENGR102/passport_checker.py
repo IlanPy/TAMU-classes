@@ -11,13 +11,19 @@
 print('Enter the name of the file: ', end='')
 file_name = input()
 valid = 0
+mylist = []
 #open file
 with open(file_name, "r") as myfile:
     for i in myfile:
         #check if all info is given
         if('byr' in i and 'iyr' in i and 'eyr' in i and 'hgt' in i and 'ecl' in i and 'pid' in i and 'cid' in i):
             valid +=1
+            mylist.append(i)
+    with open('valid_passports.txt', 'w') as infile:
+        for i in mylist:
+            infile.write(i)
+            infile.write('\n\n')
     #output
-    print(f'There are {valid} valid passports')
+    print('There are ??? valid passports')
 
 
