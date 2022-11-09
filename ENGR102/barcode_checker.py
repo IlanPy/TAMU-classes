@@ -7,8 +7,9 @@
 # Assignment:   Lab 11 indv #1
 # Date:         9 November 2022
 
+x = input('Enter the name of the file: ')
 #open file
-with open('barcodes.txt', 'r') as myfile:
+with open(x, 'r') as myfile:
     #set valid counter
     valid = 0
     #loop each line
