@@ -15,5 +15,5 @@ with open(file_name, "r") as infile:
     for i in file_aslist:
         if('byr' in i and 'iyr' in i and 'eyr' in i and 'hgt' in i and 'ecl' in i and 'pid' in i and 'cid' in i):
             valid +=1
-        
+    print(f'There are {valid} valid passports')
 
