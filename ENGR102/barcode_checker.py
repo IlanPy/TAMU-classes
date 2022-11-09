@@ -9,6 +9,7 @@
 
 x = input('Enter the name of the file: ')
 #open file
+valid_file = open("valid_barcodes.txt", 'w')
 with open(x, 'r') as myfile:
     #set valid counter
     valid = 0
@@ -37,4 +38,6 @@ with open(x, 'r') as myfile:
         #check if valid
         if(subtract == (int(new_line)%10)):
             valid += 1
+            valid_file.write(new_line)
+    valid_file.close()
     print(f'There are {valid} valid barcodes')
