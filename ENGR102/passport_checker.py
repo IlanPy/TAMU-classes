@@ -12,7 +12,7 @@ file_name = input('Enter the name of the file: ')
 
 #open files
 myfile = open(file_name, "r")
-writefile = open('valid_passports.txt', "w")
+writefile = open('valid_passports.txt', "r+")
 content = myfile.readlines()
 newlist = []
 valid = 0
@@ -25,11 +25,16 @@ for i in range(len(content)):
         s=i
 
 #loop to check if valid and write
+s=0
 for i in newlist:
     if('byr' in i and 'iyr' in i and 'eyr' in i and 'hgt' in i and 'ecl' in i and 'pid' in i and 'cid' in i):
         valid+=1
-        writefile.write(i)
-        writefile.write('\n')
+        if(s==0):
+            writefile.write(i[2:])
+        else:
+            writefile.write(i)
+        #writefile.write('\n')
+        s+=1
 
 #print and close    
 print(f'There are {valid} valid passports')
