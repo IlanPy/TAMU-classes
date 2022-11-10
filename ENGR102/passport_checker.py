@@ -12,7 +12,7 @@ file_name = input('Enter the name of the file: ')
 
 #open files
 myfile = open(file_name, "r")
-writefile = open('valid_passports.txt', "r+")
+writefile = open('valid_passports.txt', "w")
 content = myfile.readlines()
 newlist = []
 valid = 0
