@@ -30,7 +30,7 @@ for i in newlist:
     if('byr' in i and 'iyr' in i and 'eyr' in i and 'hgt' in i and 'ecl' in i and 'pid' in i and 'cid' in i):
         valid+=1
         if(s==0):
-            writefile.write(i[2:])
+            writefile.write(i[1:])
         else:
             writefile.write(i)
         #writefile.write('\n')
