@@ -16,6 +16,6 @@ DT = np.transpose(D)
 
 print(f'D^T = {DT}\n')
 
-E = np.sqrt(D/2)
+E = np.sqrt(D)/2
 
 print(f'E = {E}')
