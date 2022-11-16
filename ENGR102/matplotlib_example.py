@@ -16,6 +16,8 @@ from math import pi
 #first plot
 x = np.linspace(-2,2)
 
+plt.figure()
+
 plt.plot(x,(1/(4*2))*x**2, 'r', label ='f=2', linewidth = 2.0)
 plt.plot(x,(1/(4*6))*x**2, 'b', label ='f=6', linewidth = 6.0)
 plt.xlabel('x')
@@ -28,6 +30,8 @@ plt.show()
 
 x= np.linspace(-4,4, num =25)
 
+plt.figure()
+
 plt.plot(x, 2*(x**3) + 3*(x**2) -11*x -6, '*', color='#FFFF14', ms = 10.0, mec = 'k')
 plt.xlabel('x values')
 plt.ylabel('y values')
@@ -36,6 +40,8 @@ plt.show()
 
 #third plot
 x= np.linspace(-2*pi,2*pi)
+
+plt.figure()
 
 plt.subplot(211)
 plt.plot(x, np.cos(x), color = '#800000', label = 'cos(x)')
