@@ -6,9 +6,9 @@
 #              	Dave Wright
 #              	Jordan Rivas
 #              	Robert Stacks
-# Section:      	501
+# Section:      501
 # Assignment: 	Game Plan
-# Date:         	28 November 2022
+# Date:         28 November 2022
 
 import turtle
 import random
@@ -186,19 +186,25 @@ valid = True
 #display rules
 display_rules()
 
-#display options
-print('You can guess any letter, but not numbers or symbols')
+#display options for user
+print('Options for things you can do:')
+print('- When prompted, you can guess any letter, but not numbers or symbols')
+print('- If you wish to end the game early, type "stop" when prompted for your next guess')
 
 while valid:
     print('-------------------------------------------------')
     
     #get user input for a letter
     user_input = input('Guess a letter: ').upper()
-    
+
     #if input is int or a string (not char) loop again for reinput
     try:
-        if len(user_input) > 1:
-            pass
+        if user_input == "STOP":
+            valid = False
+            print(f"Ending game. The word was: {random_word}")
+            break
+        elif len(user_input) > 1:
+            pass        
         else:
             int(user_input)
         print('Bad input! Please retry.')
