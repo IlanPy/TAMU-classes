@@ -51,16 +51,17 @@ StackLinkedList<T>::~StackLinkedList(){
         current = next_node;
     }
     head = nullptr;
+    length = 0;
 }
 
 template <typename T>
 StackLinkedList<T>::StackLinkedList(const StackLinkedList& other) {
-    head = nullptr;
     Node<T>* other_current = other.head;
-    Node<T>* current = nullptr;
+    Node<T>* current = head = nullptr;
     while(other_current != nullptr){
-        Node<T>* new_node = new Node<T>;
+        Node<T>* new_node = new Node<T>();
         new_node->data = other_current->data;
+        new_node->next = nullptr;
         if(head == nullptr){
             head = new_node;
             current = head;
@@ -88,8 +89,9 @@ StackLinkedList<T>& StackLinkedList<T>::operator=(const StackLinkedList& other) 
         //assign
         Node<T>* other_current = other.head;
         while(other_current != nullptr){
-            Node<T>* new_node = new Node<T>;
+            Node<T>* new_node = new Node<T>();
             new_node->data = other_current->data;
+            new_node->next = nullptr;
             if(head == nullptr){
                 head = new_node;
                 current = head;
@@ -122,12 +124,8 @@ T& StackLinkedList<T>::top(){
     Node<T>* current = head;
     if(head == nullptr){
         throw std::out_of_range("");
-    } else{
-        while(current->next != nullptr){
-            current = current->next;
-        }
     }
-    return current->data;
+    return head->data;
 }
 
 template <typename T>
@@ -135,39 +133,21 @@ T StackLinkedList<T>::pop(){
     T temp;
     if(head == nullptr){
         throw std::out_of_range("");
-    } else{
-        Node<T>* current = head;
-        Node<T>* prev_node = nullptr;
-        while(current->next != nullptr){
-            prev_node = current;
-            current = current->next;
-        }
-        temp = current->data;
-        if(prev_node != nullptr){
-            prev_node->next = nullptr;
-        } else{
-            head = nullptr;
-        }
-        delete current;
     }
+    Node<T>* next_node = head->next;
+    temp = head->data;
+    delete head;
+    head = next_node;
     length--;
     return temp;
 }
 
 template <typename T>
 void StackLinkedList<T>::push(const T& e){
-    Node<T>* current = head;
-    Node<T>* new_node = new Node<T>;
+    Node<T>* new_node = new Node<T>();
     new_node->data = e;
-    if(head == nullptr){
-        head = new_node;
-    }
-    else{
-        while(current->next != nullptr){
-            current = current->next;
-        }
-        current->next = new_node;
-    }
+    new_node->next = head;
+    head = new_node;
     length++;
 }
 

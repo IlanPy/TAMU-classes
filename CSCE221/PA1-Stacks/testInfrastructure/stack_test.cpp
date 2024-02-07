@@ -284,7 +284,7 @@ int testStackArrayLinearCopyConstructor() {
 
 
 int testStackLinkedListCopyConstructor() {
-    StackLinkedList<int> s;
+    StackLinkedList<int> s = StackLinkedList<int>();
     int projectedSize = (std::rand() % 25) + 3; 
 
     for (int i = 0; i < projectedSize; i++) {
