@@ -1,0 +1,110 @@
+7fff7000-8fff7000 rw-p 00000000 00:00 0 
+8fff7000-2008fff7000 ---p 00000000 00:00 0 
+2008fff7000-10007fff8000 rw-p 00000000 00:00 0 
+55f090dc6000-55f090dc8000 r--p 00000000 08:01 1036067                    /home/ilans/csce313/activity-7/numbers
+55f090dc8000-55f090dc9000 r-xp 00002000 08:01 1036067                    /home/ilans/csce313/activity-7/numbers
+55f090dc9000-55f090dca000 r--p 00003000 08:01 1036067                    /home/ilans/csce313/activity-7/numbers
+55f090dca000-55f090dcb000 r--p 00003000 08:01 1036067                    /home/ilans/csce313/activity-7/numbers
+55f090dcb000-55f090dcd000 rw-p 00004000 08:01 1036067                    /home/ilans/csce313/activity-7/numbers
+600000000000-602000000000 ---p 00000000 00:00 0 
+602000000000-602000010000 rw-p 00000000 00:00 0 
+602000010000-602e00000000 ---p 00000000 00:00 0 
+602e00000000-602e00010000 rw-p 00000000 00:00 0 
+602e00010000-603000000000 ---p 00000000 00:00 0 
+603000000000-603000010000 rw-p 00000000 00:00 0 
+603000010000-603e00000000 ---p 00000000 00:00 0 
+603e00000000-603e00010000 rw-p 00000000 00:00 0 
+603e00010000-607000000000 ---p 00000000 00:00 0 
+607000000000-607000010000 rw-p 00000000 00:00 0 
+607000010000-607e00000000 ---p 00000000 00:00 0 
+607e00000000-607e00010000 rw-p 00000000 00:00 0 
+607e00010000-60b000000000 ---p 00000000 00:00 0 
+60b000000000-60b000010000 rw-p 00000000 00:00 0 
+60b000010000-60be00000000 ---p 00000000 00:00 0 
+60be00000000-60be00010000 rw-p 00000000 00:00 0 
+60be00010000-619000000000 ---p 00000000 00:00 0 
+619000000000-619000010000 rw-p 00000000 00:00 0 
+619000010000-619e00000000 ---p 00000000 00:00 0 
+619e00000000-619e00010000 rw-p 00000000 00:00 0 
+619e00010000-624000000000 ---p 00000000 00:00 0 
+624000000000-624000010000 rw-p 00000000 00:00 0 
+624000010000-624e00000000 ---p 00000000 00:00 0 
+624e00000000-624e00010000 rw-p 00000000 00:00 0 
+624e00010000-631000000000 ---p 00000000 00:00 0 
+631000000000-631000020000 rw-p 00000000 00:00 0 
+631000020000-631e00000000 ---p 00000000 00:00 0 
+631e00000000-631e00010000 rw-p 00000000 00:00 0 
+631e00010000-640000000000 ---p 00000000 00:00 0 
+640000000000-640000003000 rw-p 00000000 00:00 0 
+7f1e1ca00000-7f1e1cb00000 rw-p 00000000 00:00 0 
+7f1e1cc00000-7f1e1cd00000 rw-p 00000000 00:00 0 
+7f1e1cde0000-7f1e1d000000 rw-p 00000000 00:00 0 
+7f1e1d0e7000-7f1e1d200000 rw-p 00000000 00:00 0 
+7f1e1d205000-7f1e1f21c000 rw-p 00000000 00:00 0 
+7f1e1f21c000-7f1e1fa1c000 ---p 00000000 00:00 0 
+7f1e1fa1c000-7f1e1fd72000 rw-p 00000000 00:00 0 
+7f1e1fd72000-7f1e1fd78000 r--p 00000000 08:01 67263                      /usr/lib/x86_64-linux-gnu/libpthread-2.31.so
+7f1e1fd78000-7f1e1fd89000 r-xp 00006000 08:01 67263                      /usr/lib/x86_64-linux-gnu/libpthread-2.31.so
+7f1e1fd89000-7f1e1fd8f000 r--p 00017000 08:01 67263                      /usr/lib/x86_64-linux-gnu/libpthread-2.31.so
+7f1e1fd8f000-7f1e1fd90000 r--p 0001c000 08:01 67263                      /usr/lib/x86_64-linux-gnu/libpthread-2.31.so
+7f1e1fd90000-7f1e1fd91000 rw-p 0001d000 08:01 67263                      /usr/lib/x86_64-linux-gnu/libpthread-2.31.so
+7f1e1fd91000-7f1e1fd95000 rw-p 00000000 00:00 0 
+7f1e1fd95000-7f1e1fd97000 r--p 00000000 08:01 67270                      /usr/lib/x86_64-linux-gnu/librt-2.31.so
+7f1e1fd97000-7f1e1fd9b000 r-xp 00002000 08:01 67270                      /usr/lib/x86_64-linux-gnu/librt-2.31.so
+7f1e1fd9b000-7f1e1fd9d000 r--p 00006000 08:01 67270                      /usr/lib/x86_64-linux-gnu/librt-2.31.so
+7f1e1fd9d000-7f1e1fd9e000 r--p 00007000 08:01 67270                      /usr/lib/x86_64-linux-gnu/librt-2.31.so
+7f1e1fd9e000-7f1e1fd9f000 rw-p 00008000 08:01 67270                      /usr/lib/x86_64-linux-gnu/librt-2.31.so
+7f1e1fd9f000-7f1e1fda0000 r--p 00000000 08:01 67152                      /usr/lib/x86_64-linux-gnu/libdl-2.31.so
+7f1e1fda0000-7f1e1fda2000 r-xp 00001000 08:01 67152                      /usr/lib/x86_64-linux-gnu/libdl-2.31.so
+7f1e1fda2000-7f1e1fda3000 r--p 00003000 08:01 67152                      /usr/lib/x86_64-linux-gnu/libdl-2.31.so
+7f1e1fda3000-7f1e1fda4000 r--p 00003000 08:01 67152                      /usr/lib/x86_64-linux-gnu/libdl-2.31.so
+7f1e1fda4000-7f1e1fda5000 rw-p 00004000 08:01 67152                      /usr/lib/x86_64-linux-gnu/libdl-2.31.so
+7f1e1fda5000-7f1e1fda7000 rw-p 00000000 00:00 0 
+7f1e1fda7000-7f1e1fdc9000 r--p 00000000 08:01 67147                      /usr/lib/x86_64-linux-gnu/libc-2.31.so
+7f1e1fdc9000-7f1e1ff41000 r-xp 00022000 08:01 67147                      /usr/lib/x86_64-linux-gnu/libc-2.31.so
+7f1e1ff41000-7f1e1ff8f000 r--p 0019a000 08:01 67147                      /usr/lib/x86_64-linux-gnu/libc-2.31.so
+7f1e1ff8f000-7f1e1ff93000 r--p 001e7000 08:01 67147                      /usr/lib/x86_64-linux-gnu/libc-2.31.so
+7f1e1ff93000-7f1e1ff95000 rw-p 001eb000 08:01 67147                      /usr/lib/x86_64-linux-gnu/libc-2.31.so
+7f1e1ff95000-7f1e1ff99000 rw-p 00000000 00:00 0 
+7f1e1ff99000-7f1e1ff9c000 r--p 00000000 08:01 4786                       /usr/lib/x86_64-linux-gnu/libgcc_s.so.1
+7f1e1ff9c000-7f1e1ffae000 r-xp 00003000 08:01 4786                       /usr/lib/x86_64-linux-gnu/libgcc_s.so.1
+7f1e1ffae000-7f1e1ffb2000 r--p 00015000 08:01 4786                       /usr/lib/x86_64-linux-gnu/libgcc_s.so.1
+7f1e1ffb2000-7f1e1ffb3000 r--p 00018000 08:01 4786                       /usr/lib/x86_64-linux-gnu/libgcc_s.so.1
+7f1e1ffb3000-7f1e1ffb4000 rw-p 00019000 08:01 4786                       /usr/lib/x86_64-linux-gnu/libgcc_s.so.1
+7f1e1ffb4000-7f1e1ffba000 r--p 00000000 08:01 3604                       /usr/lib/x86_64-linux-gnu/libubsan.so.1.0.0
+7f1e1ffba000-7f1e1fff4000 r-xp 00006000 08:01 3604                       /usr/lib/x86_64-linux-gnu/libubsan.so.1.0.0
+7f1e1fff4000-7f1e2000a000 r--p 00040000 08:01 3604                       /usr/lib/x86_64-linux-gnu/libubsan.so.1.0.0
+7f1e2000a000-7f1e2000c000 r--p 00055000 08:01 3604                       /usr/lib/x86_64-linux-gnu/libubsan.so.1.0.0
+7f1e2000c000-7f1e2000f000 rw-p 00057000 08:01 3604                       /usr/lib/x86_64-linux-gnu/libubsan.so.1.0.0
+7f1e2000f000-7f1e20921000 rw-p 00000000 00:00 0 
+7f1e20921000-7f1e2092e000 r--p 00000000 08:01 67153                      /usr/lib/x86_64-linux-gnu/libm-2.31.so
+7f1e2092e000-7f1e209d5000 r-xp 0000d000 08:01 67153                      /usr/lib/x86_64-linux-gnu/libm-2.31.so
+7f1e209d5000-7f1e20a6e000 r--p 000b4000 08:01 67153                      /usr/lib/x86_64-linux-gnu/libm-2.31.so
+7f1e20a6e000-7f1e20a6f000 r--p 0014c000 08:01 67153                      /usr/lib/x86_64-linux-gnu/libm-2.31.so
+7f1e20a6f000-7f1e20a70000 rw-p 0014d000 08:01 67153                      /usr/lib/x86_64-linux-gnu/libm-2.31.so
+7f1e20a70000-7f1e20b06000 r--p 00000000 08:01 4785                       /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28
+7f1e20b06000-7f1e20bf7000 r-xp 00096000 08:01 4785                       /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28
+7f1e20bf7000-7f1e20c40000 r--p 00187000 08:01 4785                       /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28
+7f1e20c40000-7f1e20c41000 ---p 001d0000 08:01 4785                       /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28
+7f1e20c41000-7f1e20c4c000 r--p 001d0000 08:01 4785                       /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28
+7f1e20c4c000-7f1e20c4f000 rw-p 001db000 08:01 4785                       /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28
+7f1e20c4f000-7f1e20c52000 rw-p 00000000 00:00 0 
+7f1e20c52000-7f1e20c74000 r--p 00000000 08:01 3583                       /usr/lib/x86_64-linux-gnu/libasan.so.5.0.0
+7f1e20c74000-7f1e20da1000 r-xp 00022000 08:01 3583                       /usr/lib/x86_64-linux-gnu/libasan.so.5.0.0
+7f1e20da1000-7f1e20dd6000 r--p 0014f000 08:01 3583                       /usr/lib/x86_64-linux-gnu/libasan.so.5.0.0
+7f1e20dd6000-7f1e20dd7000 ---p 00184000 08:01 3583                       /usr/lib/x86_64-linux-gnu/libasan.so.5.0.0
+7f1e20dd7000-7f1e20dda000 r--p 00184000 08:01 3583                       /usr/lib/x86_64-linux-gnu/libasan.so.5.0.0
+7f1e20dda000-7f1e20ddd000 rw-p 00187000 08:01 3583                       /usr/lib/x86_64-linux-gnu/libasan.so.5.0.0
+7f1e20ddd000-7f1e21686000 rw-p 00000000 00:00 0 
+7f1e21686000-7f1e21697000 rw-p 00000000 00:00 0 
+7f1e21697000-7f1e21698000 r--p 00000000 08:01 67096                      /usr/lib/x86_64-linux-gnu/ld-2.31.so
+7f1e21698000-7f1e216bb000 r-xp 00001000 08:01 67096                      /usr/lib/x86_64-linux-gnu/ld-2.31.so
+7f1e216bb000-7f1e216c3000 r--p 00024000 08:01 67096                      /usr/lib/x86_64-linux-gnu/ld-2.31.so
+7f1e216c3000-7f1e216c4000 rw-p 00000000 00:00 0 
+7f1e216c4000-7f1e216c5000 r--p 0002c000 08:01 67096                      /usr/lib/x86_64-linux-gnu/ld-2.31.so
+7f1e216c5000-7f1e216c6000 rw-p 0002d000 08:01 67096                      /usr/lib/x86_64-linux-gnu/ld-2.31.so
+7f1e216c6000-7f1e216c7000 rw-p 00000000 00:00 0 
+7ffecb857000-7ffecb878000 rw-p 00000000 00:00 0                          [stack]
+7ffecb983000-7ffecb987000 r--p 00000000 00:00 0                          [vvar]
+7ffecb987000-7ffecb989000 r-xp 00000000 00:00 0                          [vdso]
+ffffffffff600000-ffffffffff601000 --xp 00000000 00:00 0                  [vsyscall]

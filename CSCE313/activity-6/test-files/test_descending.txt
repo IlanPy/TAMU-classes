@@ -1,0 +1,5 @@
+printf "PARENT read from pipe:\n"
+printf "GOOG\n"
+printf "AAPL\n"
+printf "IBM\n"
+printf "ASML\n"

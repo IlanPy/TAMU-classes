@@ -1,0 +1,133 @@
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.2 103044 11916 ?        Ss   Sep25   0:14 /sbin/init
+root           2  0.0  0.0      0     0 ?        S    Sep25   0:00 [kthreadd]
+root           3  0.0  0.0      0     0 ?        I<   Sep25   0:00 [rcu_gp]
+root           4  0.0  0.0      0     0 ?        I<   Sep25   0:00 [rcu_par_gp]
+root           5  0.0  0.0      0     0 ?        I<   Sep25   0:00 [slub_flushwq]
+root           6  0.0  0.0      0     0 ?        I<   Sep25   0:00 [netns]
+root           8  0.0  0.0      0     0 ?        I<   Sep25   0:00 [kworker/0:0H-events_highpri]
+root          10  0.0  0.0      0     0 ?        I<   Sep25   0:00 [mm_percpu_wq]
+root          11  0.0  0.0      0     0 ?        S    Sep25   0:00 [rcu_tasks_rude_]
+root          12  0.0  0.0      0     0 ?        S    Sep25   0:00 [rcu_tasks_trace]
+root          13  0.0  0.0      0     0 ?        S    Sep25   0:00 [ksoftirqd/0]
+root          14  0.0  0.0      0     0 ?        I    Sep25   0:18 [rcu_sched]
+root          15  0.0  0.0      0     0 ?        S    Sep25   0:00 [migration/0]
+root          16  0.0  0.0      0     0 ?        S    Sep25   0:00 [idle_inject/0]
+root          18  0.0  0.0      0     0 ?        S    Sep25   0:00 [cpuhp/0]
+root          19  0.0  0.0      0     0 ?        S    Sep25   0:00 [cpuhp/1]
+root          20  0.0  0.0      0     0 ?        S    Sep25   0:00 [idle_inject/1]
+root          21  0.0  0.0      0     0 ?        S    Sep25   0:00 [migration/1]
+root          22  0.0  0.0      0     0 ?        S    Sep25   0:00 [ksoftirqd/1]
+root          24  0.0  0.0      0     0 ?        I<   Sep25   0:00 [kworker/1:0H-kblockd]
+root          25  0.0  0.0      0     0 ?        S    Sep25   0:00 [kdevtmpfs]
+root          26  0.0  0.0      0     0 ?        I<   Sep25   0:00 [inet_frag_wq]
+root          27  0.0  0.0      0     0 ?        S    Sep25   0:00 [kauditd]
+root          29  0.0  0.0      0     0 ?        S    Sep25   0:00 [khungtaskd]
+root          30  0.0  0.0      0     0 ?        S    Sep25   0:00 [oom_reaper]
+root          31  0.0  0.0      0     0 ?        I<   Sep25   0:00 [writeback]
+root          32  0.0  0.0      0     0 ?        S    Sep25   0:04 [kcompactd0]
+root          33  0.0  0.0      0     0 ?        SN   Sep25   0:00 [ksmd]
+root          34  0.0  0.0      0     0 ?        SN   Sep25   0:00 [khugepaged]
+root          80  0.0  0.0      0     0 ?        I<   Sep25   0:00 [kintegrityd]
+root          81  0.0  0.0      0     0 ?        I<   Sep25   0:00 [kblockd]
+root          82  0.0  0.0      0     0 ?        I<   Sep25   0:00 [blkcg_punt_bio]
+root          83  0.0  0.0      0     0 ?        I<   Sep25   0:00 [tpm_dev_wq]
+root          84  0.0  0.0      0     0 ?        I<   Sep25   0:00 [ata_sff]
+root          85  0.0  0.0      0     0 ?        I<   Sep25   0:00 [md]
+root          86  0.0  0.0      0     0 ?        I<   Sep25   0:00 [edac-poller]
+root          87  0.0  0.0      0     0 ?        I<   Sep25   0:00 [devfreq_wq]
+root          88  0.0  0.0      0     0 ?        S    Sep25   0:00 [watchdogd]
+root          90  0.0  0.0      0     0 ?        I<   Sep25   0:00 [kworker/0:1H-kblockd]
+root          92  0.0  0.0      0     0 ?        S    Sep25   0:00 [kswapd0]
+root          93  0.0  0.0      0     0 ?        S    Sep25   0:00 [ecryptfs-kthrea]
+root          95  0.0  0.0      0     0 ?        I<   Sep25   0:00 [kthrotld]
+root          96  0.0  0.0      0     0 ?        I<   Sep25   0:00 [acpi_thermal_pm]
+root          97  0.0  0.0      0     0 ?        S    Sep25   0:00 [scsi_eh_0]
+root          98  0.0  0.0      0     0 ?        I<   Sep25   0:00 [scsi_tmf_0]
+root          99  0.0  0.0      0     0 ?        I<   Sep25   0:00 [nvme-wq]
+root         100  0.0  0.0      0     0 ?        I<   Sep25   0:00 [nvme-reset-wq]
+root         101  0.0  0.0      0     0 ?        I<   Sep25   0:00 [nvme-delete-wq]
+root         102  0.0  0.0      0     0 ?        I<   Sep25   0:00 [vfio-irqfd-clea]
+root         104  0.0  0.0      0     0 ?        I<   Sep25   0:01 [kworker/1:1H-kblockd]
+root         105  0.0  0.0      0     0 ?        I<   Sep25   0:00 [mld]
+root         106  0.0  0.0      0     0 ?        I<   Sep25   0:00 [ipv6_addrconf]
+root         116  0.0  0.0      0     0 ?        I<   Sep25   0:00 [kstrp]
+root         119  0.0  0.0      0     0 ?        I<   Sep25   0:00 [zswap-shrink]
+root         120  0.0  0.0      0     0 ?        I<   Sep25   0:00 [kworker/u5:0]
+root         127  0.0  0.0      0     0 ?        I<   Sep25   0:00 [charger_manager]
+root         128  0.0  0.0      0     0 ?        S    Sep25   0:03 [jbd2/sda1-8]
+root         129  0.0  0.0      0     0 ?        I<   Sep25   0:00 [ext4-rsv-conver]
+root         130  0.0  0.0      0     0 ?        S    Sep25   0:00 [hwrng]
+root         169  0.0  0.8  85036 32468 ?        S<s  Sep25   0:05 /lib/systemd/systemd-journald
+root         211  0.0  0.1  22116  7292 ?        Ss   Sep25   0:00 /lib/systemd/systemd-udevd
+root         236  0.0  0.0      0     0 ?        I<   Sep25   0:00 [cryptd]
+root         347  0.0  0.0      0     0 ?        I<   Sep25   0:00 [kaluad]
+root         348  0.0  0.0      0     0 ?        I<   Sep25   0:00 [kmpath_rdacd]
+root         349  0.0  0.0      0     0 ?        I<   Sep25   0:00 [kmpathd]
+root         350  0.0  0.0      0     0 ?        I<   Sep25   0:00 [kmpath_handlerd]
+root         351  0.0  0.4 280144 17952 ?        SLsl Sep25   0:10 /sbin/multipathd -d -s
+systemd+     478  0.0  0.1  27416  7536 ?        Ss   Sep25   0:00 /lib/systemd/systemd-networkd
+systemd+     481  0.0  0.3  24696 12292 ?        Ss   Sep25   0:00 /lib/systemd/systemd-resolved
+root         516  0.0  0.1 237432  7332 ?        Ssl  Sep25   0:03 /usr/lib/accountsservice/accounts-daemon
+avahi        518  0.0  0.0   8536  3276 ?        Ss   Sep25   0:00 avahi-daemon: running [ubuntu-vm.local]
+message+     521  0.0  0.1   8000  4904 ?        Ss   Sep25   0:01 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+root         522  0.0  0.4 261008 18156 ?        Ssl  Sep25   0:02 /usr/sbin/NetworkManager --no-daemon
+root         538  0.0  0.4  29904 18564 ?        Ss   Sep25   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+root         541  0.0  0.2 234976  8960 ?        Ssl  Sep25   0:00 /usr/lib/policykit-1/polkitd --no-debug
+syslog       551  0.0  0.1 224524  5296 ?        Ssl  Sep25   0:01 /usr/sbin/rsyslogd -n -iNONE
+root         562  0.0  0.6 1319916 27996 ?       Ssl  Sep25   0:05 /usr/lib/snapd/snapd
+root         563  0.0  0.1 234748  6124 ?        Ssl  Sep25   0:00 /usr/libexec/switcheroo-control
+root         565  0.0  0.3 393272 12356 ?        Ssl  Sep25   0:00 /usr/lib/udisks2/udisksd
+root         570  0.0  0.1  13700  5016 ?        Ss   Sep25   0:00 /sbin/wpa_supplicant -u -s -O /run/wpa_supplicant
+avahi        593  0.0  0.0   8348   320 ?        S    Sep25   0:00 avahi-daemon: chroot helper
+root         688  0.0  0.2 315120 11524 ?        Ssl  Sep25   0:00 /usr/sbin/ModemManager
+root         700  0.0  0.4 108140 19000 ?        Ssl  Sep25   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+root         713  0.1  1.0 1874428 41500 ?       Ssl  Sep25   2:22 /usr/bin/containerd
+_chrony      737  0.0  0.0  13024  2652 ?        S    Sep25   0:00 /usr/sbin/chronyd -F -1
+_chrony      741  0.0  0.0   4696   176 ?        S    Sep25   0:00 /usr/sbin/chronyd -F -1
+root         769  0.0  0.4 1981668 19588 ?       Ssl  Sep25   0:11 /usr/bin/google_guest_agent
+root         770  0.0  0.5 1764940 20772 ?       Ssl  Sep25   0:14 /usr/bin/google_osconfig_agent
+root         773  0.0  0.0   5700  3424 ?        Ss   Sep25   0:06 /usr/sbin/inetd
+daemon       785  0.0  0.0   3804  2252 ?        Ss   Sep25   0:00 /usr/sbin/atd -f
+root         798  0.0  0.0   7360  2360 ttyS0    Ss+  Sep25   0:00 /sbin/agetty -o -p -- \u --keep-baud 115200,38400,9600 ttyS0 vt220
+root         803  0.0  0.0   5836  1788 tty1     Ss+  Sep25   0:00 /sbin/agetty -o -p -- \u --noclear tty1 linux
+root         913  0.0  1.6 1903548 66996 ?       Ssl  Sep25   0:12 /usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock
+root        1029  0.0  0.1  12196  6880 ?        Ss   Sep25   0:03 sshd: /usr/sbin/sshd -D [listener] 0 of 10-100 startups
+root        1064  0.0  0.1  17372  7636 ?        Ss   Sep25   0:00 /lib/systemd/systemd-logind
+root        1069  0.0  0.0   8548  3040 ?        Ss   Sep25   0:00 /usr/sbin/cron -f
+root        1075  0.0  0.0   2496   572 ?        S    Sep25   0:00 bpfilter_umh
+rtkit       1320  0.0  0.0 152936  3016 ?        SNsl Sep25   0:01 /usr/libexec/rtkit-daemon
+root        8718  0.0  0.1  25900  7228 ?        Ss   00:00   0:00 /usr/sbin/cupsd -l
+root        8719  0.0  0.2 176368 10860 ?        Ssl  00:00   0:00 /usr/sbin/cups-browsed
+root       29385  0.0  0.0      0     0 ?        I    20:17   0:00 [kworker/1:2-events_freezable]
+root       29391  0.0  0.0      0     0 ?        I    20:26   0:00 [kworker/0:1-events]
+root       29411  0.0  0.2  13864  9012 ?        Ss   20:41   0:00 sshd: ilans [priv]
+ilans      29414  0.0  0.2  19160  9724 ?        Ss   20:41   0:00 /lib/systemd/systemd --user
+ilans      29415  0.0  0.0 104316  3764 ?        S    20:41   0:00 (sd-pam)
+ilans      29420  0.0  0.3 279504 14264 ?        Ssl  20:41   0:00 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+ilans      29438  0.0  0.1   7116  4080 ?        Ss   20:41   0:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+ilans      29515  0.0  0.1  14008  6012 ?        S    20:41   0:01 sshd: ilans@notty
+ilans      29517  0.0  0.0   2616  1688 ?        Ss   20:41   0:00 sh
+ilans      29535  0.1  0.3  31692 15556 ?        Sl   20:41   0:03 /home/ilans/.vscode-server/code-38c31bc77e0dd6ae88a4e9cc93428cc27a56ba40 command-shell --cli-data-dir /home/ilans/.vscode-server/cli --parent-process-id 29517 --on-host=127.0.0.1 --on-port
+ilans      29564  0.0  0.0   2616   528 ?        S    20:41   0:00 sh /home/ilans/.vscode-server/cli/servers/Stable-38c31bc77e0dd6ae88a4e9cc93428cc27a56ba40/server/bin/code-server --connection-token=remotessh --accept-server-license-terms --start-server --enable-remote-auto-shutdown --socket-path=/tmp/code-dcd03c6b-e384-462e-a0aa-466ed3b25454
+ilans      29568  0.4  2.1 1318720 87940 ?       Sl   20:41   0:11 /home/ilans/.vscode-server/cli/servers/Stable-38c31bc77e0dd6ae88a4e9cc93428cc27a56ba40/server/node /home/ilans/.vscode-server/cli/servers/Stable-38c31bc77e0dd6ae88a4e9cc93428cc27a56ba40/server/out/server-main.js --connection-token=remotessh --accept-server-license-terms --start-server --enable-remote-auto-shutdown --socket-path=/tmp/code-dcd03c6b-e384-462e-a0aa-466ed3b25454
+ilans      29600  0.8  6.1 22440584 245180 ?     Sl   20:41   0:20 /home/ilans/.vscode-server/cli/servers/Stable-38c31bc77e0dd6ae88a4e9cc93428cc27a56ba40/server/node --dns-result-order=ipv4first /home/ilans/.vscode-server/cli/servers/Stable-38c31bc77e0dd6ae88a4e9cc93428cc27a56ba40/server/out/bootstrap-fork --type=extensionHost --transformURIs --useHostProxy=false
+ilans      29611  0.1  1.4 1241092 56396 ?       Sl   20:41   0:04 /home/ilans/.vscode-server/cli/servers/Stable-38c31bc77e0dd6ae88a4e9cc93428cc27a56ba40/server/node /home/ilans/.vscode-server/cli/servers/Stable-38c31bc77e0dd6ae88a4e9cc93428cc27a56ba40/server/out/bootstrap-fork --type=fileWatcher
+ilans      29622  0.2  1.5 1135936 63432 ?       Sl   20:41   0:05 /home/ilans/.vscode-server/cli/servers/Stable-38c31bc77e0dd6ae88a4e9cc93428cc27a56ba40/server/node /home/ilans/.vscode-server/cli/servers/Stable-38c31bc77e0dd6ae88a4e9cc93428cc27a56ba40/server/out/bootstrap-fork --type=ptyHost --logsPath /home/ilans/.vscode-server/data/logs/20240926T204138
+ilans      29658  0.0  0.1  10296  5284 pts/0    Ss   20:41   0:00 /bin/bash --init-file /home/ilans/.vscode-server/cli/servers/Stable-38c31bc77e0dd6ae88a4e9cc93428cc27a56ba40/server/out/vs/workbench/contrib/terminal/browser/media/shellIntegration-bash.sh
+ilans      29721  0.3  1.4 102860 56404 ?        Sl   20:41   0:08 /home/ilans/.vscode-server/extensions/ms-vscode.cpptools-1.21.6-linux-x64/bin/cpptools
+ilans      29752  0.0  1.3 997664 52660 ?        Sl   20:41   0:00 /home/ilans/.vscode-server/cli/servers/Stable-38c31bc77e0dd6ae88a4e9cc93428cc27a56ba40/server/node /home/ilans/.vscode-server/cli/servers/Stable-38c31bc77e0dd6ae88a4e9cc93428cc27a56ba40/server/extensions/json-language-features/server/dist/node/jsonServerMain --node-ipc --clientProcessId=29600
+root       29871  0.0  0.2  13868  8892 ?        Ss   20:55   0:00 sshd: ilans [priv]
+ilans      29941  0.0  0.1  14008  5896 ?        S    20:55   0:00 sshd: ilans@notty
+ilans      29942  0.0  0.0   2616  1676 ?        Ss   20:55   0:00 sh
+ilans      29960  0.1  0.3  31468 15136 ?        Sl   20:55   0:01 /home/ilans/.vscode-server/code-38c31bc77e0dd6ae88a4e9cc93428cc27a56ba40 command-shell --cli-data-dir /home/ilans/.vscode-server/cli --parent-process-id 29942 --on-host=127.0.0.1 --on-port
+root       29996  0.0  0.0      0     0 ?        I    20:57   0:00 [kworker/1:0-events]
+root       30336  0.0  0.0      0     0 ?        I    21:13   0:00 [kworker/u4:0-events_power_efficient]
+root       30337  0.0  0.0      0     0 ?        I    21:13   0:00 [kworker/u4:3-events_unbound]
+ilans      30439  0.0  1.3 4260904 53996 ?       Sl   21:14   0:00 /home/ilans/.vscode-server/extensions/ms-vscode.cpptools-1.21.6-linux-x64/bin/cpptools-srv 29721 {44F448C1-2A54-4ED2-A614-423BC88F2ABE}
+ilans      30497 99.8  0.1 21474912436 6812 pts/0 R   21:15   8:54 ./numbers
+root       30586  0.0  0.0      0     0 ?        I    21:17   0:00 [kworker/0:2-events]
+ilans      30977  0.0  0.0   7236   584 ?        S    21:22   0:00 sleep 180
+root       31001  0.0  0.0      0     0 ?        I    21:22   0:00 [kworker/1:1-cgroup_destroy]
+ilans      31039  0.0  0.0   7236   520 ?        S    21:23   0:00 sleep 180
+ilans      31071  0.0  0.0  10620  3320 pts/0    R+   21:24   0:00 ps aux

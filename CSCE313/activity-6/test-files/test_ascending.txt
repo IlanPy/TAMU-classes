@@ -1,0 +1,5 @@
+printf "PARENT read from pipe:\n"
+printf "SUNW\n"
+printf "YHOO\n"
+printf "MSFT\n"
+printf "GE\n"
