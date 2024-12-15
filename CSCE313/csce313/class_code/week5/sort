@@ -1,0 +1,10 @@
+total 96
+-rwxrwxr-x 1 davidkebo davidkebo 17576 Sep 13 20:22 a.out
+drwxrwxr-x 2 davidkebo davidkebo  4096 Sep 13 20:22 demo
+-rwxrwxr-x 1 davidkebo davidkebo 17576 Sep 13 20:22 greedy_grid
+-rwxrwxr-x 1 davidkebo davidkebo 17576 Sep 13 20:22 grid
+-rw-rw-r-- 1 davidkebo davidkebo   939 Sep 13 20:22 grid.cpp
+-rwxrwxr-x 1 davidkebo davidkebo 17576 Sep 13 20:22 grid_demo
+drwxrwxr-x 2 davidkebo davidkebo  4096 Sep 13 20:22 io
+drwxrwxr-x 2 davidkebo davidkebo  4096 Sep 13 20:22 pcb
+-rw-rw-r-- 1 davidkebo davidkebo     0 Sep 26 21:32 sort
